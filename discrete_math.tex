@@ -1,0 +1,323 @@
+\documentclass{article}
+\usepackage[14pt]{extsizes}
+\usepackage[T1, T2A]{fontenc}
+\usepackage{indentfirst}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+\begin{document}
+
+\title{Дискретная математика}
+\author{Илья Ковалев}
+\date{2024 год}
+\maketitle
+
+\section{Информация}
+
+Профессор --- Светлана Олеговна
+
+Почта --- svetlana\_os@mail.ru
+
+Учебники:
+
+\begin{itemize}
+	\item Нефедов и Осипова -- Курс Дискретной Математики
+	\item Лавров и Максимова -- Сборник задач по теории множеств, мат. логике и теории алгоритмов
+\end{itemize}
+
+\section{Теория Множеств}
+
+\subsection{Множества}
+
+Множеству невозможно дать определение без парадоксов.
+
+\subsubsection{Создание множества}
+
+$P(x)$ --- форма от $x$/.
+
+$A = \{x | P(x)\}$
+
+$x^2 - 1 = 0$
+
+$A = \{1, -1\} = \{x | x^2 - 1 = 0\}$
+
+\subsubsection{Равенство}
+
+$\{1, 2\} = \{2, 1, 1, 2, 2, 1\}$
+
+\subsubsection{Подмножества}
+
+$A \subseteq B \Rightarrow \forall x \in A \Rightarrow x \in B$
+
+$A \subseteq B, B \subseteq C \Rightarrow A \subseteq C$
+
+$A = B \Leftrightarrow A \subseteq B, B \subseteq A$
+
+\subsubsection{Примеры}
+
+$\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+
+Пусть $A = \{1, 2\}, B = \{\{1, 2\}, 3\}, C = \{1, 2, 3\}$
+
+$A \not \subseteq B$
+
+\subsubsection{Размер множества}
+
+$m(A) = |A|$ --- количество элементов множества
+
+$\emptyset$ --- пустое множество, $|\emptyset| = 0$
+
+\subsubsection{Множество-степень}
+
+$P(A)$ --- множество-степень --- множество всех подмножеств $A$
+
+Например:
+
+$A = \{1, 2, 3\}$
+
+$P(A) = \{\emptyset, \{1\}, \{2\}\, \{3\}, \{1, 2\}, \{2, 3\}, \{3, 1\}, A\}$
+
+$|P(A)| = 2^{|A|}$
+
+\subsubsection{Абсолютное (универсальное) множество}
+
+Универсальное множество --- $U$ --- множество всех подмножеств
+
+\subsubsection{Операции}
+
+\begin{enumerate}
+	\item Объединение. $A \cup B = \{x | x \in A \lor x \in B\}$
+	\item Пересечение. $A \cap B = \{x | x \in A \land x \in B\}$
+	\item Относительное дополнение.\\
+	$A \setminus B = \{x | x \in B \land x \not \in B\}$
+	\item Симметрическая разность. $A \oplus B = (A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)$
+	\item Отрицание. $\overline{A} = \{x | x \not \in A\}$
+\end{enumerate}
+
+Пример:
+
+Пусть $A \subseteq B$
+
+Тогда:
+\begin{itemize}
+	\item $A \cap B = A$
+	\item $A \cup B = B$
+	\item $A \setminus B = \emptyset$
+\end{itemize}
+
+\subsubsection{Примеры}
+
+Пусть $A = [5; 9), B = [6; 10), C = [4; 8)$
+
+$A \cup B = [5; 10)$
+
+$A \cap C = [5; 8)$
+
+$\overline{B} = (-\infty; 6) \cup [10; +\infty)$
+
+$C \setminus A = \emptyset$
+
+$B \oplus C = [4; 6) \cup [8; 10)$
+
+$\overline{A} \setminus (B \cup \overline{C}) = (4; 9]$
+
+$\overline{(B \setminus A)} \cup \overline{(C \setminus B)} = \mathbb{R}$
+
+\subsubsection{Свойства}
+
+\begin{enumerate}
+	\item Коммутативность. $A \cup B = B \cup A$
+	\item Ассоциативность. $A \cup (B \cup C) = (A \cup B) \cup C$
+	\item Дистрибутивность. $A \cup (B \cap C) = (A \cap B) \cup (A \cap C)$
+	\item Идемпотентность. $A \cup A = A$
+	\item Закон Де-Моргана. $\overline{A \cup B} = \overline{A} \cap \overline{B}$
+	\item Поглощение. $A \cup (A \cap B) = A$
+	\item Расщепление. $A = (A \cup B) \cap (A \cup \overline{B})$
+	\item $\overline{\overline{A}} = A$
+\end{enumerate}
+
+\subsubsection{Функция $\psi$}
+
+$A \subseteq U, A \rightarrow \psi(x): U \rightarrow \{0, 1\}$
+
+$\psi_A(x) = \begin{cases}
+	1, \text{если} x \in A\\
+	0, \text{если} x \not \in A
+\end{cases}$
+
+\begin{enumerate}
+	\item $\psi_{A \cap B} = \psi_A\psi_B$
+	\item $\psi_{A \cup B} = \psi_A + \psi_B - \psi_A\psi_B$
+	\item $\psi_{A \oplus B} = \psi_A + \psi_B - 2\psi_A\psi_B$\\
+	Заметим, что $\psi_A^2 = \psi_A$, тогда $\psi_{A \oplus B} = (\psi_A - \psi_B)^2 = |\psi_A - \psi_B|$
+	\item $\psi_{\overline{A}} = 1 - \psi_A$
+	\item $\psi_{A \setminus B} = \psi_A - \psi_A\psi_B$
+\end{enumerate}
+
+\subsubsection{Табличный метод}
+
+\begin{tabular}{c|c||c||c||c||c||c}
+	$\psi_A$ & $\psi_B$ & $\psi_{A \cap B}$ &
+	$\psi_{A \cup B}$ & $\psi_{\overline{A}}$ &
+	$\psi_{A \setminus B}$ & $\psi_{A \oplus B}$ \\
+	\hline
+	1 & 1 & 1 & 1 & 0 & 0 & 0 \\
+	1 & 0 & 0 & 1 & 0 & 1 & 1 \\
+	0 & 1 & 0 & 1 & 1 & 0 & 1\\
+	0 & 0 & 0 & 0 & 1 & 0 & 0
+\end{tabular}
+
+Пример:
+
+$A \setminus (B \setminus C) = (A \setminus B) \cup (A \cap C)$
+
+\begin{tabular}{c|c|c|c|c||c|c|c}
+	$\psi_A$ & $\psi_B$ & $\psi_C$ & $\psi_{B \setminus C}$ &
+	$\psi_{A \setminus (B \setminus C)}$ &
+	$\psi_{A \setminus B}$ & $\psi_{A \cap C}$ & $\psi_\cup$
+	\\
+	\hline
+	0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+	0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 \\
+	0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+	0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+	\hline
+	1 & 0 & 0 & 0 & 1 & 1 & 0 & 1 \\
+	1 & 0 & 1 & 1 & 0 & 1 & 1 & 1 \\
+	1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+	1 & 1 & 1 & 0 & 1 & 0 & 1 & 1 \\
+\end{tabular}
+
+\subsubsection{Доказательство утверждением}
+
+Условия:
+\begin{enumerate}
+	\item $A \subseteq B$
+	\item $A \cap B = A$
+	\item $A \cup B = A$
+\end{enumerate}
+эквивалентны.
+
+{\Large \underline{Доказательство $1 \Rightarrow 2$:}}
+
+Дано: $A \subseteq B$
+
+Доказать: $A \cap B = A$
+
+\begin{enumerate}
+	\item $A \cap B \subseteq A$\\
+	Пусть $x \in A \cap B \Rightarrow x \in A$
+	\item $A \subseteq A \cap B$\\
+	Пусть $x \in A \stackrel{\text{по усл}}{\Rightarrow} x \in B
+	\Rightarrow x \in A \cap B$
+\end{enumerate}
+
+{\Large \underline{Доказательство $2 \Rightarrow 3$:}}
+
+Дано: $A \cap B = A$
+
+Доказать: $A \cup B = B$
+
+$A \cup B = (A \cap B) \cup B = B$
+
+{\Large \underline{Доказательство $3 \Rightarrow 1$:}}
+
+Дано: $A \cup B = B$
+
+Доказать: $A \subseteq B$
+
+От противного:
+
+Предположим $A \not \subseteq B \Rightarrow \exists x \in A \land x \not \in B$
+
+Так как $x \in A \Rightarrow x \in A \cap B
+\stackrel{\text{по усл}}{\Rightarrow} x \in B$ --- противоречие
+
+Следовательно, $A \subseteq B$
+
+\subsubsection{ДЗ}
+
+Лаврова \& Максимов: Часть I, $\P$ 1, №11, 12, 14
+
+\section{Бинарные отношения}
+
+$\rho \subseteq A \times B$
+
+$A = B = X$
+
+$\langle x, y \rangle \in \rho \eqcirc x \rho y$
+
+\subsection{Свойства}
+
+\textbf{Бинарное отношение} $\rho$, заданное на множестве $X$, называется:
+\begin{enumerate}
+	\item \textbf{Рефлексивным} если $\forall x \in X, x \rho x$\\
+	Примеры: $x = x$, $x \parallel x$
+	\item \textbf{Симметричным} если $\forall x, y \in X, x \rho y \Rightarrow y \rho x$\\
+	Примеры: $x = x$, $x \perp x$
+	\item \textbf{Антисимметричным} если $\forall x, y \in X, x \rho y \land y \rho x \Rightarrow x = y$\\
+	Примеры: $x \ge y$, $x \le y$, $x > y$, $X \subseteq Y$
+	\item \textbf{Транзитивным} если $\forall x, y, z \in X, x \rho y \land y \rho z \Rightarrow x \rho z$\\
+	Примеры: $x = y \land y = z$, $x \parallel y \land y \parallel z$
+	\item \textbf{Ассимметричным} если $\forall x, y \in X, x \rho y \Rightarrow \overline{y \rho x}$
+\end{enumerate}
+
+\subsection{Специальные бинарные отношения}
+
+\subsubsection{Отношение эквивалентности}
+
+\begin{enumerate}
+	\item Рефлексивно
+	\item Симметрично
+	\item Транзитивно
+\end{enumerate}
+
+Пример:
+
+\begin{itemize}
+	\item $x = x$
+	\item $x = y \Rightarrow y = x$
+	\item $x = y \land y = z \Rightarrow x = z$
+\end{itemize}
+
+\subsubsection{Отношение (частичного) порядка}
+
+\begin{enumerate}
+	\item Рефлексивно
+	\item Антисимметрично
+	\item Транзитивно
+\end{enumerate}
+
+Пример:
+
+\begin{itemize}
+	\item $x \le x$
+	\item $x \le y \land y \le x \Rightarrow x = y$
+	\item $x \le y \land y \le z \Rightarrow x \le z$
+\end{itemize}
+
+{\Large Утверждение:}
+
+Пусть $\rho$ --- эквивалентнсть на $X$
+
+Тогда $\rho$:
+
+\begin{enumerate}
+	\item Задает на $X$ разбиение на классы эквивалентности.
+	\item Если на $X$ задано разбиение, то отношение $\rho$, заданное так, что $x \rho y \Leftrightarrow x$ и $y \in$ одном подмножестве
+\end{enumerate}
+
+\subsection{Разбиение}
+
+$A = \bigcup \limits_{i = 1}^n A_i$, так что:
+
+\begin{enumerate}
+	\item $\forall i, j \in [1; n], i \ne j, A_i \cap A_j = \emptyset$
+	\item $\forall i \in [1; n], A_i \ne \emptyset$
+\end{enumerate}
+
+Разбиение $A$ --- $P(A) = \{A_1, A_2 \dots A_n\}$
+
+\end{document}

@@ -1,0 +1,201 @@
+\documentclass{article}
+\usepackage[14pt]{extsizes}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{indentfirst}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\title{Математический Анализ}
+\author{Илья Ковалев}
+\date{2024 год}
+\maketitle
+
+
+
+\section{Учебники}
+
+\begin{itemize}
+\item Зорич Владимир Антонович --- математический анализ
+\item Фихтенгольц --- Основы математического анализа
+\item Димедович --- Сборник задач по математическому анализу
+\end{itemize}
+
+\section{Элементы теории множеств}
+
+
+Множество --- набор элементов.
+
+Пустое множество --- $\emptyset$.
+
+Универсальное множество --- $U$ --- элементов рассматриевомого типа.
+
+\section{Операции над множествами}
+
+\subsection{Приадлежность}
+
+$x \in A$ --- $x$ принадлежит $A$
+
+\subsection{Подмножество}
+
+$A \subset B$ если
+$\forall x \in A \Rightarrow x \in B$
+
+\subsection{Пересечение}
+
+$A \cap B = \{x: x \in A \land x \in B\}$
+
+\subsection{Объединение}
+
+$A \cup B = \{x: x \in A \lor x \in B\}$
+
+\subsection{Разность}
+
+$A \setminus B = \{x: x \in A \land x \notin B\}$
+
+\subsection{Дополнение}
+
+$\overline{A} = U \setminus A = \{x: x \notin A\}$
+
+\section{Логические высказывания}
+Логическое высказывание --- повествовательное предлжение, про которое можно сказать, истинно оно или ложно.
+
+Предикат --- утверждение, зависящие от переменной (переменных),
+превращающаяся в логическое высказывание при подстановке вместо переменной (переменных) ее значения.
+
+Область истинности предиката --- множество значений переменной (переменных), при которых этот предикат превращается в истинное высказывание.
+
+\section{Операции над логическими высказываниями}
+
+\subsection{Отрицание}
+$
+\begin{tabular}{c|c}
+	A & $\overline{A}$ \\
+	\hline
+	0 & 1 \\
+	1 & 0
+\end{tabular}
+$
+
+% \subsection{Конъюнкция}
+% $
+% \begin{tabular}{c|c||c}
+% 	A & B & A \cap B \\
+% 	\hline
+% 	0 & 0 & 0
+% \end{tabular}
+% $
+
+\section{Область существования и определения функции}
+
+\subsection{}
+
+$y = \sqrt{1 + x}$
+
+$1 + x \ge 0$
+
+$x \ge -1$
+
+$x \in [-1; +\infty)$
+
+\subsection{}
+
+$y = \sqrt{2 + x - x^2}$
+
+$2 + x - x^2 \ge 0$
+
+$x^2 - x - 2 \le 0$
+
+$(x - 2)(x + 1) \le 0$
+
+$x \in (-\infty; -1] \cup [2; +\infty)$
+
+\subsection{}
+
+$y = \lg{\frac{x^2 - 3x + 2}{x + 1}}$
+
+$\frac{x^2 - 3x + 2}{x + 1} > 0$
+
+$\frac{(x - 2)(x - 1)}{x + 1} > 0$
+
+$x \in (-1; 1) \cup (2; +\infty)$
+
+\subsection{}
+
+$y = \sqrt{sin2x}$
+
+$sin2x \ge 0$
+
+$x \in [\pi k; \frac{\pi}{2} + \pi k: k \in \mathbb{Z}]$
+
+\section{Четность и нечетность}
+
+\subsection{}
+
+$f(x) = \frac{a^x + a^{-x}}{2}$
+
+$f(-x) = \frac{a^{-x} + a^x}{2}$
+
+$f(x) = f(-x)$ --- функция четная
+
+\subsection{}
+
+$f(x) = \sqrt[3]{(x - 1)^2} + \sqrt[3]{(x + 1)^2}$
+
+$f(-x) = \sqrt[3]{(x + 1)^2} + \sqrt[3]{(x - 1)^2}$
+
+$f(x) = f(-x)$ --- функция четная
+
+\subsection{}
+
+$f(x) = \lg{\frac{1 + x}{1 - x}}$
+
+$f(-x) = \lg{\frac{1 - x}{1 + x}} = -\lg{\frac{1 + x}{1 - x}}$
+
+$f(x) = -f(-x)$ --- функция нечетная
+
+\section{Периодичность}
+
+Период --- $T$
+
+\subsection{}
+
+$f(x) = 10\sin{3x}$
+
+$\sin{\alpha}$ --- $T = 2\pi$
+
+$f(x)$ --- $T = \frac{2\pi}{3}$
+
+\subsection{}
+
+$f(x) = \alpha \sin{\lambda x} + \beta \cos{\lambda x}$
+
+$T = \frac{2\pi}{\lambda}$
+
+\section{Графики}
+
+\subsection{Парабола}
+
+$y = a(x - x_0)^2 + y_0$
+
+$y = x^2 - x + 2$
+
+$y = (x - \frac{1}{2})$
+
+\subsection{Кубическая парабола}
+
+$y = a(x - x_0)^3 + y_0$
+
+\subsection{Гипербола}
+
+$y = \frac{a}{x - x_0} + y_0$
+
+\subsection{ДЗ}
+
+Демидович:
+№153, 154, 157, 165, 254, 255
+
+\end{document}

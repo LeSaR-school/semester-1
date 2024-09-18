@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[14pt]{extsizes}
+\usepackage[T1, T2A]{fontenc}
+\usepackage{indentfirst}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+\begin{document}
+
+\title{Архитектура компьютера и информационных систем}
+\author{Илья Ковалев}
+\date{2024 год}
+\maketitle
+
+\section{Представление вещественных чисел}
+
+\subsection{Хранение}
+
+Вещественные числа в компьютере хранятся в одном "слове" --- 64 битах (на современных системах)
+
+\subsection{Запись числа в 64 битных системах}
+
+\begin{tabular}{|c||c|c|c||c|c|c|}
+	\hline
+	\text{знак} & $e_1$ & $e_2 \dots e_{10}$ & $e_{11}$ & $v_1$ & $v_2 \dots v_{51}$ & $v_{52}$ \\
+	\hline
+\end{tabular}
+
+Где $e_{0 \dots i}$ --- экспонент, $v_{0 \dots i}$ --- значение
+
+\section{Обработка сообщений}
+
+\subsection{Понятия}
+
+$I$ --- множество информации
+
+$N$ --- множество сообщений
+
+$\phi: N \rightarrow I$ --- функция интерпретации
+
+$\nu: N \rightarrow N'$ --- функция преображения сообщений
+
+$\rho: I \rightarrow I'$ --- функция преображения информации
+
+$D$ --- представление в компьютере
+
+$C$ --- функция превращения сообщений в их компьютерные \\
+представления
+
+$P$ --- функция обработки данных
+
+$Q$ --- функция раскодирования компьютерных представлений
+
+$\nu = Q \circ P \circ C$
+
+\begin{alignat*}{5}
+	D & \stackrel{C}{\longleftarrow} & N & \stackrel{\phi}{\longrightarrow} & I \\
+	P \downarrow & & \nu \downarrow & & \rho \downarrow \\
+	D' & \stackrel{Q}{\longrightarrow} & N' & \stackrel{\phi'}{\longrightarrow} & I'
+\end{alignat*}
+
+\subsection{Свойства алгоритма}
+
+\begin{itemize}
+	\item Массовость
+	\item Детерминированность
+	\item Элементарность
+	\item Результативность
+\end{itemize}
+
+\subsection{Сложность}
+
+Пусть $f(n) = O(g(n))$
+
+Тогда $\exists C$--- const$, n_0 \in \mathbb{N} : \forall n > n_0 \Rightarrow f(n) \le C g(n)$
+
+\end{document}
