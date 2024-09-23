@@ -73,83 +73,80 @@ $\overline{A} = U \setminus A = \{x: x \notin A\}$
 \section{Операции над лог. высказываниями}
 
 \subsection{Отрицание}
-$
 \begin{tabular}{c|c}
 	A & $\overline{A}$ \\
 	\hline
 	0 & 1 \\
 	1 & 0
 \end{tabular}
-$
 
 \section{Область существования и \\
 определения функции}
 
 \subsection{}
 
-$y = \sqrt{1 + x}$
-
-$1 + x \ge 0$
-
-$x \ge -1$
-
-$x \in [-1; +\infty)$
-
-\subsection{}
-
-$y = \sqrt{2 + x - x^2}$
-
-$2 + x - x^2 \ge 0$
-
-$x^2 - x - 2 \le 0$
-
-$(x - 2)(x + 1) \le 0$
-
-$x \in (-\infty; -1] \cup [2; +\infty)$
+\begin{gather*}
+	y = \sqrt{1 + x} \\
+	1 + x \ge 0 \\
+	x \ge -1 \\
+	x \in [-1; +\infty)
+\end{gather*}
 
 \subsection{}
 
-$y = \lg{\frac{x^2 - 3x + 2}{x + 1}}$
-
-$\frac{x^2 - 3x + 2}{x + 1} > 0$
-
-$\frac{(x - 2)(x - 1)}{x + 1} > 0$
-
-$x \in (-1; 1) \cup (2; +\infty)$
+\begin{gather*}
+	y = \sqrt{2 + x - x^2} \\
+	2 + x - x^2 \ge 0 \\
+	x^2 - x - 2 \le 0 \\
+	(x - 2)(x + 1) \le 0 \\
+	x \in (-\infty; -1] \cup [2; +\infty)	
+\end{gather*}
 
 \subsection{}
 
-$y = \sqrt{sin2x}$
+\begin{gather*}
+	y = \lg{\frac{x^2 - 3x + 2}{x + 1}} \\
+	\frac{x^2 - 3x + 2}{x + 1} > 0 \\
+	\frac{(x - 2)(x - 1)}{x + 1} > 0 \\
+	x \in (-1; 1) \cup (2; +\infty)
+\end{gather*}
 
-$sin2x \ge 0$
+\subsection{}
 
-$x \in [\pi k; \frac{\pi}{2} + \pi k: k \in \mathbb{Z}]$
+\begin{gather*}
+	y = \sqrt{sin 2x} \\
+	sin 2x \ge 0 \\
+	x \in [\pi k; \frac{\pi}{2} + \pi k: k \in \mathbb{Z}]
+\end{gather*}
 
 \section{Четность и нечетность}
 
 \subsection{}
 
-$f(x) = \frac{a^x + a^{-x}}{2}$
-
-$f(-x) = \frac{a^{-x} + a^x}{2}$
-
-$f(x) = f(-x)$ --- функция четная
-
-\subsection{}
-
-$f(x) = \sqrt[3]{(x - 1)^2} + \sqrt[3]{(x + 1)^2}$
-
-$f(-x) = \sqrt[3]{(x + 1)^2} + \sqrt[3]{(x - 1)^2}$
-
-$f(x) = f(-x)$ --- функция четная
+\begin{gather*}
+	f(x) = \frac{a^x + a^{-x}}{2} \\
+	f(-x) = \frac{a^{-x} + a^x}{2} \\
+	f(x) = f(-x)
+\end{gather*}
+функция четная
 
 \subsection{}
 
-$f(x) = \lg{\frac{1 + x}{1 - x}}$
+\begin{gather*}
+	f(x) = \sqrt[3]{(x - 1)^2} + \sqrt[3]{(x + 1)^2} \\
+	f(-x) = \sqrt[3]{(x + 1)^2} + \sqrt[3]{(x - 1)^2} \\
+	f(x) = f(-x)
+\end{gather*}
+функция четная
 
-$f(-x) = \lg{\frac{1 - x}{1 + x}} = -\lg{\frac{1 + x}{1 - x}}$
+\subsection{}
 
-$f(x) = -f(-x)$ --- функция нечетная
+\begin{gather*}
+	f(x) = \lg{\frac{1 + x}{1 - x}} \\
+	f(-x) = \lg{\frac{1 - x}{1 + x}} = -\lg{\frac{1 + x}{1 - x}} \\
+	f(x) = -f(-x)
+\end{gather*}
+функция нечетная
 
 \section{Периодичность}
 
@@ -157,35 +154,33 @@ $f(x) = -f(-x)$ --- функция нечетная
 
 \subsection{}
 
-$f(x) = 10\sin{3x}$
-
-$\sin{\alpha}$ --- $T = 2\pi$
-
-$f(x)$ --- $T = \frac{2\pi}{3}$
+\begin{gather*}
+	f(x) = 10\sin{3x} \\
+	\sin{\alpha}: T = 2\pi \\
+	f(x): T = \frac{2\pi}{3}
+\end{gather*}
 
 \subsection{}
 
-$f(x) = \alpha \sin{\lambda x} + \beta \cos{\lambda x}$
+\begin{gather*}
+	f(x) = \alpha \sin{\lambda x} + \beta \cos{\lambda x} \\
+	T = \frac{2\pi}{\lambda}
+\end{gather*} 
 
-$T = \frac{2\pi}{\lambda}$
 
 \section{Графики}
 
 \subsection{Парабола}
 
-$y = a(x - x_0)^2 + y_0$
-
-$y = x^2 - x + 2$
-
-$y = (x - \frac{1}{2})$
+\[ y = a(x - x_0)^2 + y_0 \]
 
 \subsection{Кубическая парабола}
 
-$y = a(x - x_0)^3 + y_0$
+\[ y = a(x - x_0)^3 + y_0 \]
 
 \subsection{Гипербола}
 
-$y = \frac{a}{x - x_0} + y_0$
+\[ y = \frac{a}{x - x_0} + y_0 \]
 
 \subsection{ДЗ}
 
@@ -298,5 +293,59 @@ $\mathbb{R} \setminus \{0\}$ --- абелева группа по умножен
 Пусть $U, W$ --- такие множества, что $\forall x \in U, y \in W : x \le y$
 
 Тогда $\exists c \in \mathbb{R} : x \le c \le y$
+
+\pagebreak
+\section{Альтернативные зависимости}
+
+\subsection{Полярная система координат}
+
+$r$ --- расстояние от начала координат
+
+$\phi$ --- угол от оси $Ox$ против часовой стрелки
+
+\subsubsection*{Примеры:}
+
+\begin{enumerate}
+	\item Прямая $y = 1$
+	\[ r = \frac{1}{sin \phi} \]
+	\item Окружность $(x - 1)^2 + y^2 = 1$
+	\[ r = 2 cos \phi \]
+\end{enumerate}
+
+\subsection{Параметрическая}
+
+\begin{align*}
+	y &= \phi(t) \\
+	x &= \psi(t)
+\end{align*}
+
+\subsubsection*{Примеры:}
+
+\begin{enumerate}
+	\item Окружность $x^2 + y^2 = 1$
+	\[
+	\begin{cases}
+		x = cos(t) \\
+		y = sin(t)
+	\end{cases}
+	\]
+	\item Отрезок $x + y = 2, x \ge 0, y \ge 0$
+	\[
+	\begin{cases}
+		x = 2 cos^2 t \\
+		y = 2 sin^2 t
+	\end{cases}
+	\]
+\end{enumerate}
+
+\subsection{ДЗ}
+
+№№
+\begin{itemize}
+	\item 369(а, б, ж)
+	\item 371(в, д, ж)
+\end{itemize}
+
+
 
 \end{document}
