@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2024-09-20T12:14:32.726753803</dc:date><meta:editing-duration>PT1H30M37S</meta:editing-duration><meta:editing-cycles>2</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="74" meta:word-count="561" meta:character-count="4481" meta:non-whitespace-character-count="4020"/></office:meta>
+ <office:meta><dc:date>2024-09-21T14:43:32.168023668</dc:date><meta:editing-duration>P1DT1H7M</meta:editing-duration><meta:editing-cycles>3</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="74" meta:word-count="561" meta:character-count="4481" meta:non-whitespace-character-count="4020"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">84878</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">86783</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">48897</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">21909</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">22941</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">24656</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">98298</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">15947</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">102193</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">84878</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">86783</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">48895</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">106786</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">109723</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1755178</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1921948</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -153,7 +153,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Serif CJK SC" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -253,168 +253,208 @@
    <style:text-properties fo:font-size="32pt" fo:language="ru" fo:country="RU" officeooo:rsid="0012de7d" officeooo:paragraph-rsid="0012de7d" style:font-size-asian="28pt" style:font-size-complex="32pt"/>
   </style:style>
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001634e0" officeooo:paragraph-rsid="001634e0" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:font-weight="normal" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="0013f105"/>
-  </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="0013f105"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="18pt" officeooo:rsid="001437d4" officeooo:paragraph-rsid="001437d4" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-weight="bold" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties officeooo:paragraph-rsid="00173437"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001634e0" officeooo:paragraph-rsid="001634e0" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001634e0" officeooo:paragraph-rsid="001634e0" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
-  </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L6">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L10">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L6">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L7">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L8">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L9">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L10">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="16pt" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
-  </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437"/>
-  </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
-   <style:text-properties officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437"/>
-  </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="32pt" fo:language="ru" fo:country="RU" officeooo:rsid="0012de7d" officeooo:paragraph-rsid="0012de7d" style:font-size-asian="28pt" style:font-size-complex="32pt"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:font-size="32pt" fo:language="ru" fo:country="RU" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="28pt" style:font-size-complex="32pt"/>
   </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001634e0" officeooo:paragraph-rsid="001634e0" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:font-weight="normal" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="0013f105"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="00173437"/>
+  </style:style>
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties officeooo:paragraph-rsid="0013f105"/>
+  </style:style>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="18pt" officeooo:rsid="001437d4" officeooo:paragraph-rsid="001437d4" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437"/>
+  </style:style>
+  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:font-size="20pt" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="20pt" style:font-size-complex="20pt"/>
+  </style:style>
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="24pt" fo:language="ru" fo:country="RU" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="21pt" style:font-size-complex="24pt"/>
+  </style:style>
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L1">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013f105" officeooo:paragraph-rsid="0013f105" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001564e5" officeooo:paragraph-rsid="001564e5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="001634e0" officeooo:paragraph-rsid="001634e0" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L5">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L6">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L7">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L8">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L9">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L10">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="normal" officeooo:rsid="00174b52" officeooo:paragraph-rsid="00174b52" style:font-size-asian="16pt" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L4">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="00173437" officeooo:paragraph-rsid="00173437" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L10">
+   <style:paragraph-properties fo:text-align="start" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="16pt" officeooo:rsid="001978b5" officeooo:paragraph-rsid="001978b5" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+  </style:style>
+  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties fo:font-size="20pt" fo:language="ru" fo:country="RU" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="001876c3" officeooo:paragraph-rsid="001876c3" style:font-size-asian="20pt" style:font-weight-asian="normal" style:font-size-complex="20pt" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-size="16pt" fo:language="ru" fo:country="RU" style:font-size-asian="14pt" style:font-size-complex="16pt"/>
@@ -584,52 +624,52 @@
    </text:list-level-style-number>
   </text:list-style>
   <text:list-style style:name="L3">
-   <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%." text:bullet-char="•">
+   <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.5in" fo:text-indent="-0.25in" fo:margin-left="0.5in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" loext:num-list-format="%2%." text:bullet-char="◦">
+   <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" loext:num-list-format="%2%." style:num-suffix="." text:bullet-char="◦">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.75in" fo:text-indent="-0.25in" fo:margin-left="0.75in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" loext:num-list-format="%3%." text:bullet-char="▪">
+   <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" loext:num-list-format="%3%." style:num-suffix="." text:bullet-char="▪">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1in" fo:text-indent="-0.25in" fo:margin-left="1in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" loext:num-list-format="%4%." text:bullet-char="•">
+   <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" loext:num-list-format="%4%." style:num-suffix="." text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.25in" fo:text-indent="-0.25in" fo:margin-left="1.25in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" loext:num-list-format="%5%." text:bullet-char="◦">
+   <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" loext:num-list-format="%5%." style:num-suffix="." text:bullet-char="◦">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.5in" fo:text-indent="-0.25in" fo:margin-left="1.5in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" loext:num-list-format="%6%." text:bullet-char="▪">
+   <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" loext:num-list-format="%6%." style:num-suffix="." text:bullet-char="▪">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.75in" fo:text-indent="-0.25in" fo:margin-left="1.75in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" loext:num-list-format="%7%." text:bullet-char="•">
+   <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" loext:num-list-format="%7%." style:num-suffix="." text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2in" fo:text-indent="-0.25in" fo:margin-left="2in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" loext:num-list-format="%8%." text:bullet-char="◦">
+   <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" loext:num-list-format="%8%." style:num-suffix="." text:bullet-char="◦">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.25in" fo:text-indent="-0.25in" fo:margin-left="2.25in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" loext:num-list-format="%9%." text:bullet-char="▪">
+   <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" loext:num-list-format="%9%." style:num-suffix="." text:bullet-char="▪">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5in" fo:text-indent="-0.25in" fo:margin-left="2.5in"/>
     </style:list-level-properties>
    </text:list-level-style-bullet>
-   <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" loext:num-list-format="%10%." text:bullet-char="•">
+   <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" loext:num-list-format="%10%." style:num-suffix="." text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in"/>
     </style:list-level-properties>
@@ -1023,197 +1063,198 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
    <text:p text:style-name="P1">Обучение служением</text:p>
-   <text:p text:style-name="P41"><text:span text:style-name="T21">Некоммерческие организации</text:span></text:p>
-   <text:p text:style-name="P2">НКО — организация, не имеющая извлечение прибыли в качестве основной цели своей деятельности и не распределяющая полученную прибыль между участниками.</text:p>
-   <text:p text:style-name="P2">СО НКО - некоммерческие организации, созданные в предусмотренных настоящим Федеральным законом формах (за исключением государственных корпораций, государственных компаний, общественных объединений, являющихся политическими партиями) и осуществляющие деятельность, направленную на решение социальных проблем, развитие гражданского общества в Российской Федерации</text:p>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P2">Формы социально ориентированных некоммерческих организаций:</text:p>
-   <text:list xml:id="list4166073520" text:style-name="L1">
+   <text:p text:style-name="P28">Некоммерческие организации</text:p>
+   <text:p text:style-name="P3">НКО — организация, не имеющая извлечение прибыли в качестве основной цели своей деятельности и не распределяющая полученную прибыль между участниками.</text:p>
+   <text:p text:style-name="P3">СО НКО - некоммерческие организации, созданные в предусмотренных настоящим Федеральным законом формах (за исключением государственных корпораций, государственных компаний, общественных объединений, являющихся политическими партиями) и осуществляющие деятельность, направленную на решение социальных проблем, развитие гражданского общества в Российской Федерации</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P3">Формы социально ориентированных некоммерческих организаций:</text:p>
+   <text:list xml:id="list1398175445" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P11">Общественные и религиозные организации (объединения).</text:p>
+     <text:p text:style-name="P29">Общественные и религиозные организации (объединения).</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Общины коренных малочисленных народов Российской Федерации.</text:p>
+     <text:p text:style-name="P29">Общины коренных малочисленных народов Российской Федерации.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Казачьи общества.</text:p>
+     <text:p text:style-name="P29">Казачьи общества.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Фонды.</text:p>
+     <text:p text:style-name="P29">Фонды.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Некоммерческие партнерства.</text:p>
+     <text:p text:style-name="P29">Некоммерческие партнерства.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Частные учреждения.</text:p>
+     <text:p text:style-name="P29">Частные учреждения.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Государственные, муниципальные учреждения.</text:p>
+     <text:p text:style-name="P29">Государственные, муниципальные учреждения.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Бюджетные учреждения.</text:p>
+     <text:p text:style-name="P29">Бюджетные учреждения.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Автономная некоммерческая организация.</text:p>
+     <text:p text:style-name="P29">Автономная некоммерческая организация.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">Ассоциации (союзы).</text:p>
-    </text:list-item>
-   </text:list>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P8"><text:span text:style-name="T13">О</text:span><text:span text:style-name="T12">собенности НКО</text:span></text:p>
-   <text:p text:style-name="P13">Непрямое госфинансирование </text:p>
-   <text:p text:style-name="P2">Отношения в сфере аренды государственного или муниципального имущества <text:s/>регулирует статья 17.1 Федерального закона № 135-ФЗ «О защите конкуренции». Данный закон гласит, что государственные и муниципальные учреждения вправе сдавать в аренду недвижимое имущество, которое закреплено за ними на праве оперативного управления исключительно на основании результата конкурса или аукциона на право заключения договора аренды государственного и муниципального имущества.</text:p>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P6"><text:soft-page-break/><text:span text:style-name="T2">Но в статье 17.1 За</text:span><text:span text:style-name="T3">ко</text:span><text:span text:style-name="T2">на «О защите конкуренции» предусмотрен ряд исключений, которые распространяются на некоторые разновидности </text:span><text:span text:style-name="T2">НКО. </text:span><text:span text:style-name="T3">Главный</text:span><text:span text:style-name="T2"> вид господдержки — имущественная поддержка, передач</text:span><text:span text:style-name="T3">а</text:span><text:span text:style-name="T2"> в долговременное пользование организации объектов нежилой недвижимости, являющихся собственностью государства.</text:span></text:p>
-   <text:p text:style-name="P2"/>
-   <text:p text:style-name="P9"><text:span text:style-name="T2">Д</text:span><text:span text:style-name="T1">З</text:span><text:span text:style-name="T4"> </text:span><text:span text:style-name="T5">19.09</text:span></text:p>
-   <text:list xml:id="list1649727746" text:style-name="L2">
-    <text:list-item>
-     <text:p text:style-name="P14">Понятие и концепция соц проекта</text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P14">Структура концепции проекта, <text:span text:style-name="T20">ак</text:span>туальность проекта, <text:span text:style-name="T20">ц</text:span>ель и задачи, <text:span text:style-name="T20">с</text:span>одержание деятельност<text:span text:style-name="T20">ь, п</text:span>равовое, экономическое, организационное обоснование, <text:span text:style-name="T20">ожидаемые последствия его осуществления</text:span></text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P15">Структура текстогого описания</text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P15">Замысел и актуальность</text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P15">Выявление актуальных соц проблем</text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P15">методы коллективной работы над : мозговая аттака, метод ТРИЗ, метод создания сценариев.</text:p>
+     <text:p text:style-name="P29">Ассоциации (союзы).</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P4"/>
-   <text:p text:style-name="P4"/>
-   <text:p text:style-name="P4"/>
-   <text:p text:style-name="P17">Актуальность — насколько проект повлияет на общество, группу людей или регион.</text:p>
-   <text:p text:style-name="P17">Описание актуального проекта:</text:p>
-   <text:list xml:id="list2582880333" text:style-name="L3">
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P24"><text:span text:style-name="T13">О</text:span><text:span text:style-name="T12">собенности НКО</text:span></text:p>
+   <text:p text:style-name="P4">Непрямое госфинансирование </text:p>
+   <text:p text:style-name="P3">Отношения в сфере аренды государственного или муниципального имущества <text:s/>регулирует статья 17.1 Федерального закона № 135-ФЗ «О защите конкуренции». Данный закон гласит, что государственные и муниципальные учреждения вправе сдавать в аренду недвижимое имущество, которое закреплено за ними на праве оперативного управления исключительно на основании результата конкурса или аукциона на право заключения договора аренды государственного и муниципального имущества.</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P21"><text:soft-page-break/><text:span text:style-name="T2">Но в статье 17.1 За</text:span><text:span text:style-name="T3">ко</text:span><text:span text:style-name="T2">на «О защите конкуренции» предусмотрен ряд исключений, которые распространяются на некоторые разновидности </text:span><text:span text:style-name="T2">НКО. </text:span><text:span text:style-name="T3">Главный</text:span><text:span text:style-name="T2"> вид господдержки — имущественная поддержка, передач</text:span><text:span text:style-name="T3">а</text:span><text:span text:style-name="T2"> в долговременное пользование организации объектов нежилой недвижимости, являющихся собственностью государства.</text:span></text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P25"><text:span text:style-name="T2">Д</text:span><text:span text:style-name="T1">З</text:span><text:span text:style-name="T4"> </text:span><text:span text:style-name="T5">19.09</text:span></text:p>
+   <text:list xml:id="list1972877778" text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P10"><text:span text:style-name="T7">Он не должен дублировать существующий</text:span></text:p>
+     <text:p text:style-name="P30">Понятие и концепция соц проекта</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T6">Должен установить чья проблема, и можно ли ее устранить</text:span></text:p>
+     <text:p text:style-name="P30">Структура концепции проекта, <text:span text:style-name="T20">ак</text:span>туальность проекта, <text:span text:style-name="T20">ц</text:span>ель и задачи, <text:span text:style-name="T20">с</text:span>одержание деятельност<text:span text:style-name="T20">ь, п</text:span>равовое, экономическое, организационное обоснование, <text:span text:style-name="T20">ожидаемые последствия его осуществления</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P38"><text:span text:style-name="T6">Что произойдет, если проект будет реализован (количественные показатели и структура)</text:span></text:p>
-    </text:list-item>
-   </text:list>
-   <text:p text:style-name="P39"><text:span text:style-name="T6">Это поможет найти цель. </text:span><text:span text:style-name="T8">Цель должна быть единственной.</text:span></text:p>
-   <text:list xml:id="list4169397729" text:style-name="L4">
-    <text:list-item>
-     <text:p text:style-name="P18"><text:span text:style-name="T15">Цель и проблема должны быть связаны.</text:span></text:p>
+     <text:p text:style-name="P31">Структура текстогого описания</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P21"><text:span text:style-name="T15">Ц</text:span><text:span text:style-name="T14">ель должна быть конкретной.</text:span></text:p>
+     <text:p text:style-name="P31">Замысел и актуальность</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P21"><text:span text:style-name="T14">Из цели вытекают задачи.</text:span></text:p>
-    </text:list-item>
-   </text:list>
-   <text:p text:style-name="P22"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P24"><text:span text:style-name="T14">Обоснование проекта</text:span></text:p>
-   <text:p text:style-name="P22"><text:span text:style-name="T14">Аспекты обоснования:</text:span></text:p>
-   <text:list xml:id="list2889376048" text:style-name="L5">
-    <text:list-item>
-     <text:p text:style-name="P23"><text:span text:style-name="T14">Правовой</text:span></text:p>
+     <text:p text:style-name="P31">Выявление актуальных соц проблем</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P25"><text:span text:style-name="T14">Финансовый — ресурсы, которые потребуются для воплощения</text:span></text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P25"><text:span text:style-name="T14">Организационный — фунуция каждого участника комманды</text:span></text:p>
+     <text:p text:style-name="P31">методы коллективной работы над : мозговая аттака, метод ТРИЗ, метод создания сценариев.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P26"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P26"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P28"><text:soft-page-break/><text:span text:style-name="T14">Ожидаемые последствия/результаты</text:span></text:p>
-   <text:p text:style-name="P37"><text:span text:style-name="T19">Последствия не всегда положительные.</text:span></text:p>
-   <text:p text:style-name="P37"><text:span text:style-name="T19"/></text:p>
-   <text:p text:style-name="P26"><text:span text:style-name="T18">Социальная диагностика </text:span><text:span text:style-name="T14">— может ли среда, в которой мы реализовываем проект, помешать или помочь проекту</text:span></text:p>
-   <text:p text:style-name="P26"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P28"><text:span text:style-name="T14">Планирование проекта</text:span></text:p>
-   <text:p text:style-name="P26"><text:span text:style-name="T14">Перечень и порядок мероприятий по организации проекта.</text:span></text:p>
-   <text:p text:style-name="P26"><text:span text:style-name="T14">Правила:</text:span></text:p>
-   <text:list xml:id="list1117621209" text:style-name="L6">
+   <text:p text:style-name="P6"/>
+   <text:p text:style-name="P6"/>
+   <text:p text:style-name="P6"/>
+   <text:p text:style-name="P7">Актуальность — насколько проект повлияет на общество, группу людей или регион.</text:p>
+   <text:p text:style-name="P7">Описание актуального проекта:</text:p>
+   <text:list xml:id="list487230197" text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P19"><text:span text:style-name="T16">Ресурсов — ресурсы могут быть в избытке, следовательно все лишние расходы ресурсов</text:span></text:p>
+     <text:p text:style-name="P32">Он не должен дублировать существующий</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P27"><text:span text:style-name="T14">Времени — время ограничено, поэтому если его не хватает, необходимо разделить проект на несколько разных</text:span></text:p>
+     <text:p text:style-name="P32">Должен установить чья проблема, и можно ли ее устранить</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P27"><text:span text:style-name="T14">Места — если проект не может быть выполнен по одному стандарту, то его нужно разделить на разные проекты.</text:span></text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P27"><text:span text:style-name="T14">Последствия — стремиться к уменьшению негативных и увеличению положительных последствий.</text:span></text:p>
+     <text:p text:style-name="P32">Что произойдет, если проект будет реализован (количественные показатели и структура)</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P26"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P29"><text:span text:style-name="T14">Составление бюджета</text:span></text:p>
-   <text:p text:style-name="P30"><text:span text:style-name="T14">Нам этот пункт можно опустить.</text:span></text:p>
-   <text:p text:style-name="P30"><text:span text:style-name="T14">Можно сделать предположение о том, какие источники финансирования существуют</text:span></text:p>
-   <text:p text:style-name="P30"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P42"><text:span text:style-name="T14">Методы коллективной работы</text:span></text:p>
-   <text:p text:style-name="P29"><text:span text:style-name="T14">Мозговая аттака (brainstorm)</text:span></text:p>
-   <text:list xml:id="list117898437" text:style-name="L7">
+   <text:p text:style-name="P26"><text:span text:style-name="T6">Это поможет найти цель. </text:span><text:span text:style-name="T8">Цель должна быть единственной.</text:span></text:p>
+   <text:list xml:id="list3969864546" text:style-name="L4">
     <text:list-item>
-     <text:p text:style-name="P31"><text:span text:style-name="T14">все участники предлагают варианты без критики (ограниченно по времени)</text:span></text:p>
+     <text:p text:style-name="P33">Цель и проблема должны быть связаны.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P31"><text:span text:style-name="T14">Все варианты рассматриваются, выбирается лучший</text:span></text:p>
+     <text:p text:style-name="P50"><text:span text:style-name="T14">Ц</text:span><text:span text:style-name="T14">ель должна быть конкретной.</text:span></text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P33">Из цели вытекают задачи.</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P30"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P29"><text:span text:style-name="T14">Деловая игра</text:span></text:p>
-   <text:list xml:id="list4094966416" text:style-name="L8">
+   <text:p text:style-name="P34"/>
+   <text:p text:style-name="P36">Обоснование проекта</text:p>
+   <text:p text:style-name="P34">Аспекты обоснования:</text:p>
+   <text:list xml:id="list2957881428" text:style-name="L5">
     <text:list-item>
-     <text:p text:style-name="P32"><text:span text:style-name="T14">Образуются две команды</text:span></text:p>
+     <text:p text:style-name="P35">Правовой</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P32"><text:span text:style-name="T14">Обе стороны пытаются переспорить друг друга</text:span></text:p>
-    </text:list-item>
-   </text:list>
-   <text:p text:style-name="P30"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P29"><text:span text:style-name="T14">Метод фокальных объектов</text:span></text:p>
-   <text:p text:style-name="P30"><text:span text:style-name="T14">— способ конструирования новых объектов путем применения к нему свойств других объектов</text:span></text:p>
-   <text:list xml:id="list3878068865" text:style-name="L9">
-    <text:list-item>
-     <text:p text:style-name="P33"><text:span text:style-name="T14">Называются случайные объекты, не связанные с данным</text:span></text:p>
+     <text:p text:style-name="P37">Финансовый — ресурсы, которые потребуются для воплощения</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P33"><text:span text:style-name="T14">Перечисляются их ключевые свойства</text:span></text:p>
-    </text:list-item>
-    <text:list-item>
-     <text:p text:style-name="P33"><text:span text:style-name="T14">Эти свойства применяются к данному объекту</text:span></text:p>
+     <text:p text:style-name="P37">Организационный — фунуция каждого участника комманды</text:p>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="P34"><text:soft-page-break/><text:span text:style-name="T14">ТРИЗ (Теория Решения Изобретательских Задач)</text:span></text:p>
-   <text:p text:style-name="P35"><text:span text:style-name="T14">Согласно ТРИЗ, существует алгоритм решения, идеальный результат, и строится путь решения.</text:span></text:p>
-   <text:p text:style-name="P35"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P34"><text:span text:style-name="T14">Метод контрольных вопросов</text:span></text:p>
-   <text:p text:style-name="P35"><text:span text:style-name="T14">Проведение решения через список вопросов</text:span></text:p>
-   <text:p text:style-name="P35"><text:span text:style-name="T14"/></text:p>
-   <text:p text:style-name="P35"><text:span text:style-name="T14">Вопросы:</text:span></text:p>
-   <text:list xml:id="list2934730906" text:style-name="L10">
+   <text:p text:style-name="P38"/>
+   <text:p text:style-name="P38"/>
+   <text:p text:style-name="P40"><text:soft-page-break/>Ожидаемые последствия/результаты</text:p>
+   <text:p text:style-name="P49">Последствия не всегда положительные.</text:p>
+   <text:p text:style-name="P49"/>
+   <text:p text:style-name="P14"><text:span text:style-name="T18">Социальная диагностика </text:span><text:span text:style-name="T14">— может ли среда, в которой мы реализовываем проект, помешать или помочь проекту</text:span></text:p>
+   <text:p text:style-name="P38"/>
+   <text:p text:style-name="P40">Планирование проекта</text:p>
+   <text:p text:style-name="P38">Перечень и порядок мероприятий по организации проекта.</text:p>
+   <text:p text:style-name="P38">Правила:</text:p>
+   <text:list xml:id="list601136606" text:style-name="L6">
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T17">О</text:span><text:span text:style-name="T14">ценка жизнеспособности соц проекта: соц диагностика, прогнозирование, экспертиза.</text:span></text:p>
+     <text:p text:style-name="P39">Ресурсов — ресурсы могут быть в избытке, следовательно все лишние расходы ресурсов</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P20"><text:span text:style-name="T17">Конкурентоспособность проекта</text:span></text:p>
+     <text:p text:style-name="P39">Времени — время ограничено, поэтому если его не хватает, необходимо разделить проект на несколько разных</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T14">Оценка социального эффекта от реализации проекта, основные показатели эффективности и результативности проекта</text:span></text:p>
+     <text:p text:style-name="P39">Места — если проект не может быть выполнен по одному стандарту, то его нужно разделить на разные проекты.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P36"><text:span text:style-name="T14">Мониторинг и оценка проектов — общее и различия</text:span></text:p>
+     <text:p text:style-name="P39">Последствия — стремиться к уменьшению негативных и увеличению положительных последствий.</text:p>
     </text:list-item>
    </text:list>
+   <text:p text:style-name="P38"/>
+   <text:p text:style-name="P41">Составление бюджета</text:p>
+   <text:p text:style-name="P42">Нам этот пункт можно опустить.</text:p>
+   <text:p text:style-name="P42">Можно сделать предположение о том, какие источники финансирования существуют</text:p>
+   <text:p text:style-name="P42"/>
+   <text:p text:style-name="P52">Методы коллективной работы</text:p>
+   <text:p text:style-name="P41">Мозговая аттака (brainstorm)</text:p>
+   <text:list xml:id="list3132419856" text:style-name="L7">
+    <text:list-item>
+     <text:p text:style-name="P43">все участники предлагают варианты без критики (ограниченно по времени)</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P43">Все варианты рассматриваются, выбирается лучший</text:p>
+    </text:list-item>
+   </text:list>
+   <text:p text:style-name="P42"/>
+   <text:p text:style-name="P41">Деловая игра</text:p>
+   <text:list xml:id="list2648557417" text:style-name="L8">
+    <text:list-item>
+     <text:p text:style-name="P44">Образуются две команды</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P44">Обе стороны пытаются переспорить друг друга</text:p>
+    </text:list-item>
+   </text:list>
+   <text:p text:style-name="P42"/>
+   <text:p text:style-name="P41">Метод фокальных объектов</text:p>
+   <text:p text:style-name="P42">— способ конструирования новых объектов путем применения к нему свойств других объектов</text:p>
+   <text:list xml:id="list3252696059" text:style-name="L9">
+    <text:list-item>
+     <text:p text:style-name="P45">Называются случайные объекты, не связанные с данным</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P45">Перечисляются их ключевые свойства</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P45">Эти свойства применяются к данному объекту</text:p>
+    </text:list-item>
+   </text:list>
+   <text:p text:style-name="P46"><text:soft-page-break/>ТРИЗ (Теория Решения Изобретательских Задач)</text:p>
+   <text:p text:style-name="P47">Согласно ТРИЗ, существует алгоритм решения, идеальный результат, и строится путь решения.</text:p>
+   <text:p text:style-name="P47"/>
+   <text:p text:style-name="P46">Метод контрольных вопросов</text:p>
+   <text:p text:style-name="P47">Проведение решения через список вопросов</text:p>
+   <text:p text:style-name="P47"/>
+   <text:p text:style-name="P47">Вопросы:</text:p>
+   <text:list xml:id="list2819116877" text:style-name="L10">
+    <text:list-item>
+     <text:p text:style-name="P51"><text:span text:style-name="T14">О</text:span><text:span text:style-name="T14">ценка жизнеспособности соц проекта: соц диагностика, прогнозирование, экспертиза.</text:span></text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P48">Конкурентоспособность проекта</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P48">Оценка социального эффекта от реализации проекта, основные показатели эффективности и результативности проекта</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P48">Мониторинг и оценка проектов — общее и различия</text:p>
+    </text:list-item>
+   </text:list>
+   <text:p text:style-name="P47"/>
   </office:text>
  </office:body>
 </office:document>
