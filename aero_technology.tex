@@ -78,4 +78,94 @@ $\Delta y$ --- приращение функции
 
 $\vec{a} = \dot{\vec{v}}$
 
+\subsection{Производные}
+
+\subsubsection*{В декартовой системе}
+
+\begin{align*}
+	dS &= dx dy \\
+	dV &= dx dy dz
+\end{align*}
+
+\subsubsection*{В сферической системе}
+
+\begin{align*}
+	b &= r d\theta \\
+	a &= r \sin \theta d\phi \\
+	c &= dr
+\end{align*}
+
+\begin{align*}
+	dS = ab &= r^2 \sin \theta d\theta d\phi \\
+	dV = abc &= dS \cdot dr
+\end{align*}
+
+\begin{gather*}
+	S = \int_{0}^{\pi} r^2 \sin \theta d\theta  \int_{0}^{2\pi} 1 d\phi = \\
+	= r^2 \int_{0}^{2\pi} d\theta = r^2 \cdot 2\pi \cdot 2 \Rightarrow \\
+	S = 4 \pi r^2
+\end{gather*}
+
+\begin{gather*}
+	V = \int_{0}^{\pi} \int_{0}^{2\pi} \int_{0}^{R} r^2 \sin \theta d\theta d\phi dr = \\
+	= \int_{0}^{\pi} \sin \theta d\theta \int_{0}^{2\pi} d\phi \int_{0}^{R} r^2 dr \Rightarrow \\
+	V = \frac{4}{3} \pi R^3
+\end{gather*}
+
+\subsubsection*{В полярной системе}
+
+\begin{align*}
+	\vec{r} \rightarrow \vec{v} &= \frac{d\vec{r}}{dt} = \dot{\vec{r}}(t) \\
+	\vec{v} \rightarrow \vec{a} &= \frac{d\vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}
+\end{align*}
+
+\begin{gather*}
+	\begin{cases}
+		x = r \cos \phi \\
+		y = r \sin \phi
+	\end{cases} \Rightarrow \\
+	\begin{cases}
+		v_x = \dot{x} = (r \cos \phi)_{t}^{'} = \dot{r} \cos \phi + r(\cos \phi)_{t}^{'} = 
+		\dot{r} \cos \phi + r \sin \phi \cdot \dot{\phi} \\
+		v_x = \dot{y} = (r \sin \phi)_{t}^{'} = \dot{r} \sin \phi + r(\sin \phi)_{t}^{'} =
+		\dot{r} \sin \phi + r \cos \phi \cdot \dot{\phi}
+	\end{cases}
+\end{gather*}
+
+\begin{gather*}
+	\Delta t \to 0 \\
+	v_1 = v_2 = v \\
+	\vec{a} = \frac{\Delta \vec{v}}{\Delta t} \\
+	\frac{R}{v} = \frac{S}{\Delta v} \Rightarrow \frac{R}{v} = \frac{v}{a} \Rightarrow a_n = \frac{v^2}{R}
+\end{gather*}
+
+\begin{gather*}
+	a_\tau = \frac{d|\vec{v}|}{dt} \\
+	\vec{a} = \vec{a}_n + \vec{a}_\tau
+\end{gather*}
+
+Полное ускорение --- сумма нормального ($a_n$) и тангенсального ($a_\tau$)
+
+\begin{gather*}
+	\omega = \dot{\phi} = \lim_{\Delta t \to 0} \frac{\Delta \phi}{\Delta t} \\
+	\beta = \dot{\omega} =\ \stackrel{..}{\omega}\ = \lim_{\Delta t \to 0} \frac{\Delta \omega}{\Delta t}
+\end{gather*}
+
+\subsection{Векторное произведение}
+
+\subsubsection*{Скалярное произведение}
+\[ \vec{a} \cdot \vec{b} = (\vec{a}, \vec{b}) = (\vec{a} \cdot \vec{b}) \]
+
+Пример: работа
+\[ A = \vec{F} \cdot \Delta \vec{r} \]
+
+\subsubsection*{Векторное произведение}
+\[ \vec{a} \times \vec{b} = [\vec{a}, \vec{b}] = [\vec{a} \times \vec{b}] \]
+
+Свойства:
+\begin{align*}
+	|\vec{a} \times \vec{b}| &= |\vec{a}| \cdot |\vec{b}| \sin \angle(\vec{a}, \vec{b}) \\
+	\vec{a} \times \vec{b} &= -[\vec{a} \times \vec{b}]
+\end{align*}
+
 \end{document}
