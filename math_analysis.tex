@@ -35,7 +35,7 @@
 
 \section{Операции над множествами}
 
-\subsection{Приадлежность}
+\subsection{Принадлежность}
 
 $x \in A$ --- $x$ принадлежит $A$
 
@@ -346,6 +346,84 @@ $\phi$ --- угол от оси $Ox$ против часовой стрелки
 	\item 371(в, д, ж)
 \end{itemize}
 
+\subsection{Натуральные числа}
 
+\textbf{Индуктивное множество} --- множество, обладающие тем \\
+свойством, что наряду с элементом $a$, ему принадлежит элемент $a + 1$.
+
+\subsubsection{Определения}
+
+Множество \textbf{натуральных чисел} --- минимальное индуктивное \\
+множество, содержащее единицу. То есть пересечение всех индуктивных множеств, \\
+содержащих единицу.
+
+\[
+\mathbb{N} = \bigcap M : 1 \in M \land (x \in M \Rightarrow (x + 1) \in M)
+\]
+
+Множество $A$ называется \textbf{ограниченным сверху}, если $\exists b \in \mathbb{R} : \forall a \in A, a \le b$.
+
+Тогда $b$ --- \textbf{мажората} $A$.
+
+Множество $A$ называется \textbf{ограниченным снизу}, если $\exists c \in \mathbb{R} : \forall a \in A, a \ge c$.
+
+Тогда $c$ --- \textbf{минората} $A$.
+
+$d$ --- \textbf{максималный элемент} множества $A$, если $d \in A \land \forall a \in A : a \le d$.
+
+$e$ --- \textbf{минимальный элемент} множества $A$, если $e \in A \land \forall a \in A : a \ge e$.
+
+\textbf{Точная верхняя грань (супремум)} множества $A$ --- наименьшая можоранта $A$
+
+$\sup A$ --- супремум $A$
+
+Любое ограниченное сверху множество имеет супремум.
+
+\underline{Доказательство:}
+
+\begin{gather*}
+	B = \{b \in \mathbb{R}\ |\ \forall a \in A, b \ge a\} \\
+	\forall a \in A, b \in B : a \le b \stackrel{A16}{\Rightarrow} \\
+	\stackrel{A16}{\Rightarrow} \exists c \in \mathbb{R} :
+	\forall a \in A, b \in B \Rightarrow a \le c \le b \Rightarrow \\
+	\Rightarrow c \stackrel{\triangle}{=} \sup A
+\end{gather*}
+
+\textbf{Точная нижняя грань (инфимум)} множества $A$ --- наибольшая минората $A$
+
+$\inf A$ --- инфимум $A$
+
+Любое ограниченное снизу множество имеет инфимум.
+
+\pagebreak
+\textbf{Последовательность} --- отображение $\mathbb{N}$ в множество любой \\
+природы.
+\begin{gather*}
+	n \rightarrow I_n (\text{$I_n$ --- отрезок действительной оси}) \\
+	\{ I_n \} : \forall n \in \mathbb{N}, I_{n + 1} \subset I_n \Rightarrow \\
+	\Rightarrow \{ I_n \}
+\end{gather*}
+
+\underline{Теорема:}
+
+Пусть $\{ U_n \}, n \in \mathbb{N}$ --- система вложенных отрезков.
+
+Тогда $\exists c \in \mathbb{R}, \forall n \in \mathbb{N} : c \in U_n$.
+
+Кроме того, если $U_n = [a_n, b_n]$ и \\
+$\forall \epsilon > 0, \exists n \in \mathbb{N} : b_n - a_n < \epsilon$, то $\exists ! c$
+
+\textbf{Покрытие} $B$ --- система множеств $A_1, A_2, \dots A_n$, если \\
+$\forall x \in B, \exists n : x \in A_n$ 
+
+Или
+
+\[
+B \subseteq \bigcup \limits_{i=1}^{n} A_i
+\]
+
+\underline{Теорема:}
+
+Из любого покрытия отрезка интервалами можно выделить конечное подпокрытиеk
 
 \end{document}
