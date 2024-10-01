@@ -426,4 +426,40 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 
 Из любого покрытия отрезка интервалами можно выделить конечное подпокрытиеk
 
+\section{Пределы, последовательности}
+
+\subsection{Определение предела}
+
+\begin{gather*}
+	\{x_n\}_{n = 1, 2 \dots} \\
+	\lim_{n \to \infty} x_n = a \\
+	\text{if } \forall \epsilon > 0 \exists N(\epsilon) : \\
+	|x_n - a| < \epsilon, n > N(\epsilon)
+\end{gather*}
+
+\subsection{Пример}
+
+Доказать:
+\[
+	\lim_{n \to \infty} \frac{2x + 3}{n + 1} = 2
+\]
+
+\pagebreak
+Доказательство:
+\begin{gather*}
+	|\frac{2n + 3}{n + 1} - 2| = |\frac{2n + 3 - 2n - 2}{n + 1}| = |\frac{1}{n + 1}| < \epsilon \\
+	n + 1 > \frac{1}{\epsilon} \\
+	n > \frac{1}{\epsilon} - 1 \\
+	N(\epsilon) = \frac{1}{\epsilon} - 1
+\end{gather*}
+
+\subsection{Геометрическая прогрессия}
+
+\begin{gather*}
+	x_n = a \cdot q^{n-1} \\
+	\lim_{n \to \inf} = \frac{a}{1 - q}
+\end{gather*}
+
+
+
 \end{document}

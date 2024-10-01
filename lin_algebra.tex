@@ -822,7 +822,8 @@ $c_1 = c_2 = \dots = c_k = 0$, то уравнение Линейно НеЗав
 \subsection{Минор прямоугольной матрицы}
 
 Минором прямоугольной матрицы $A_{m \times n}$ порядка $k \le \min(m, n)$ \\
-называется любой определитель $M_k$, составленный из $k$ различных строк и столбцов.
+называется любой определитель $M_k$, составленный из элементов на \\
+пересечении $k$ различных строк и столбцов.
 
 \subsubsection*{Пример}
 
@@ -927,5 +928,216 @@ A_{3 \times 5} = \begin{pmatrix}
 \textbf{Ступенчатая матрица} --- матрица, в которой можно провести \\
 ломаную линию, отделяющую все ненулевые элементы от остальных, \\
 при этом граничные элементы не могут быть нулями.
+
+\subsection{Правило крамера}
+
+\begin{gather*}
+	n \times n \begin{cases}
+		a_{11} x_1 + \dots + a_{1n} x_n = b_1 \\
+		\vdots \\
+		a_{n1} x_1 + \dots + a_{nn} x_n = b_n
+	\end{cases}
+	\Leftrightarrow
+	A \vec{x} = \vec{b} \\
+	A = \begin{pmatrix}
+		a_{11} \dots a_{1n} \\
+		\vdots \\
+		a_{n1} \dots a_{nn}
+	\end{pmatrix} \\
+	\vec{x} = \begin{pmatrix}
+		x_1 \\
+		\vdots \\
+		x_n
+	\end{pmatrix} \\
+	\vec{b} = \begin{pmatrix}
+		b_1 \\
+		\vdots \\
+		b_n
+	\end{pmatrix} \\
+	\det A \ne 0 \Rightarrow \exists ! A^{-1} \Rightarrow \exists \vec{x} = A^{-1} \vec{b} \\
+	x_j = \frac{\Delta j}{\Delta}, \Delta = \det A, \Delta_j = D(\vec{a}_1, \dots \vec{a}_{j - 1}, \vec{b}, \vec{a}_{j + 1}, \dots \vec{a}_n)
+\end{gather*}
+
+\subsubsection*{№2.191}
+
+\begin{align*}
+	\begin{cases}
+		2x + y = 5 \\
+		x + 3z = 16 \\
+		5y - z = 10
+	\end{cases}
+	&\Rightarrow
+	\vec{x} = \begin{pmatrix}x \\ y \\ z\end{pmatrix},
+	\vec{b} = \begin{pmatrix}5 \\ 16 \\ 10\end{pmatrix} \\
+	A &= \begin{pmatrix}
+		2 & 1 & 0 \\
+		1 & 0 & 3 \\
+		0 & 5 & -1
+	\end{pmatrix} \\
+	\Delta &= -29 \ne 0 \\
+	\Delta_1 &= \begin{vmatrix}
+		5 & 1 & 0 \\
+		16 & 0 & 3 \\
+		10 & 5 & -1
+	\end{vmatrix} = -29 \\
+	\frac{\Delta_1}{\Delta} &= 1 \\
+	\Delta_1 &= \begin{vmatrix}
+		2 & 5 & 0 \\
+		1 & 16 & 3 \\
+		0 & 10 & -1
+	\end{vmatrix} = -87 \\
+	\frac{\Delta_2}{\Delta} &= 3 \\
+	\Delta_1 &= \begin{vmatrix}
+		2 & 1 & 5 \\
+		1 & 0 & 16 \\
+		0 & 5 & 10
+	\end{vmatrix} = -145 \\
+	\frac{\Delta_2}{\Delta} &= 5 \\
+	\vec{x} &= \begin{pmatrix}1 \\ 3 \\ 5\end{pmatrix}
+\end{align*}
+
+\subsection{Метод окаймляющих миноров матрицы}
+
+\[
+A_{3 \times 5} = \begin{pmatrix}
+	2 & -1 & 3 & -2 & 4 \\
+	4 & -2 & 5 & 1 & 7 \\
+	2 & -1 & 1 & 8 & 2 \\
+\end{pmatrix}
+\]
+
+\begin{gather*}
+	k = 1: M_{II}^{III} = 5 \ne 0 \Rightarrow r \ge 1 \\
+	k = 2: M_{I, II}^{II, III} = \begin{vmatrix}
+		-1 & 3 \\
+		-2 & 5
+	\end{vmatrix} = -5 + 6 = 1 \ne 0 \Rightarrow r \ge 2 \\
+	k = 3: M' = M_{I, II, III}^{I, II, III} = \begin{vmatrix}
+		2 & -1 & 3 \\
+		4 & -2 & 5 \\
+		2 & -1 & 1
+	\end{vmatrix} = 0 \text{ --- не подходит на $M_\text{баз}$} \\
+	M'' = M_{I, II, III}^{II, III, IV} = \begin{vmatrix}
+		-1 & 3 & -2 \\
+		-2 & 5 & 1 \\
+		-1 & 1 & 8
+	\end{vmatrix} = 0 \text{ --- не подходит на $M_\text{баз}$} \\
+	M''' = M_{I, II, III}^{III, IV, V} = \begin{vmatrix}
+		-1 & 3 & 4 \\
+		-2 & 5 & 7 \\
+		-1 & 1 & 2
+	\end{vmatrix} = 0 \text{ --- не подходит на $M_\text{баз}$}
+\end{gather*}
+
+Итого:
+
+\begin{gather*}
+	M_\text{баз} = M_2 = M_{I, II}^{II, III} \\
+	Rg A_{3 \times 5} = 2
+\end{gather*}
+
+\subsubsection*{№2.151}
+
+\[
+A_{4 \times 4} = \begin{pmatrix}
+	1 & 3 & 5 & -1 \\
+	2 & -1 & -3 & 4 \\
+	5 & 1 & -1 & 7 \\
+	7 & 7 & 9 & 1
+\end{pmatrix}
+\]
+\begin{gather*}
+	k = 2 \\
+	M_2 = M_{II, III}^{II, III} = \begin{vmatrix}
+		-1 & -3 \\
+		1 & -1
+	\end{vmatrix} = 4 \ne 0 \Rightarrow r \ge 2 \\
+\end{gather*}
+
+\begin{gather*}
+	k = 3 \\
+	M'_3 = M_{I, II, III}^{I, II, III} = \begin{vmatrix}
+		1 & 3 & 5 \\
+		2 & -1 & -3 \\
+		5 & 1 & -1
+	\end{vmatrix} = \dots = 0 \\
+	M''_3 = M_{I, II, III}^{II, III, IV} = \begin{vmatrix}
+		2 & -1 & -3 \\
+		5 & 1 & -1 \\
+		7 & 7 & 9
+	\end{vmatrix} = \dots = 0 \\
+	M'_3 = M_{II, III, IV}^{II, III, IV} = \begin{vmatrix}
+		-1 & -3 & 4 \\
+		1 & -1 & 7 \\
+		7 & 9 & 1
+	\end{vmatrix} = -16 \ne 0 \Rightarrow r \ge 3
+\end{gather*}
+\begin{gather*}
+	k = 4 \\
+	M_4 = \det A = \begin{vmatrix}
+		1 & 3 & 5 & -1 \\
+		2 & -1 & -3 & 4 \\
+		5 & 1 & -1 & 7 \\
+		7 & 7 & 9 & 1
+	\end{vmatrix} = 0 \land \exists ! M_4 \Rightarrow M_\text{баз} = M_3
+\end{gather*}
+
+\subsection{Метод элементарных преобразований матрицы. \\
+Приведение к ступенчатому виду.}
+
+\subsubsection{Правило}
+
+Ранг ступенчатой матрицы равен числу ненулевых строк
+
+\subsubsection*{№2.150}
+
+\begin{gather*}
+	A = \begin{pmatrix}
+		2 & -1 & 3 & -2 & 4 \\
+		4 & -2 & 5 & 1 & 7 \\
+		2 & -1 & 1 & 8 & 2
+	\end{pmatrix}
+	\begin{bmatrix}
+		\to 6 \\
+		\to 15 \\
+		\to 12
+	\end{bmatrix}
+	\begin{matrix}
+		\\ II - 2I \\ II - I
+	\end{matrix} \sim \\
+	\sim \begin{pmatrix}
+		2 & -1 & 3 & -2 & 4 \\
+		0 & 0 & -1 & 5 & -1 \\
+		0 & 0 & -2 & 10 & -2
+	\end{pmatrix}
+	\begin{bmatrix}
+		\to 6 \\
+		\to 3 \\
+		\to 6
+	\end{bmatrix} \sim \\
+	\sim \begin{pmatrix}
+		2 & -1 & 3 & -2 & 4 \\
+		0 & 0 & -1 & 5 & -1 \\
+		0 & 0 & 0 & 0 & 0
+	\end{pmatrix}
+	\begin{bmatrix}
+		\to 6 \\
+		\to 3 \\
+		\to 0
+	\end{bmatrix}
+\end{gather*}
+
+\[
+Rg A_{3 \times 5} = 2
+\]
+
+\subsection{ДЗ}
+
+№№
+\begin{itemize}
+	\item 2.191
+	\item .192
+	\item .201
+\end{itemize}
 
 \end{document}
