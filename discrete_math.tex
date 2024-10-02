@@ -337,5 +337,48 @@ $\not \exists y \in X : a \gtrapprox y$
 Два частично упорядоченных множества $X$ и $Y$ называются \\
 \textbf{изоморфными}, если существует биекция
 
+\subsubsection*{№13(б)}
+
+\begin{gather*}
+	A \subseteq B \cup C \Leftrightarrow A \cap \overline{B} \subseteq C
+\end{gather*}
+
+{\large Дано:}
+\[ A \subseteq B \cup C \]
+
+{\large Доказать:}
+\[ A \cap \overline{B} \subseteq C \]
+
+{\large Доказательство:}
+\begin{gather*}
+	\text{let } x \in A \cap \overline{B} \Rightarrow x \in A \land x \not \in B \\
+	x \in a \stackrel{\text{усл}}{\Rightarrow} x \in B \cup C \Rightarrow x \in B \lor x \in C \\
+	\begin{cases}
+		x \in B \lor x \in C \\
+		x \not \in B
+	\end{cases} \Rightarrow x \in C
+\end{gather*}
+
+{\large Дано:}
+\[ A \cap \overline{B} \subseteq C \]
+
+{\large Доказать:}
+\[ A \subseteq B \cup C \]
+
+{\large Доказательство:}
+\begin{gather*}
+	\text{let } x \in A \\
+	\text{if } x \in B \Rightarrow x \in B \cup C \\
+	\text{if } x \not \in B \Rightarrow x \in A \cap \overline{B} \stackrel{\text{усл}}{\Rightarrow} x \in C \Rightarrow x \in B \cup C
+\end{gather*}
+
+\subsection{Метод доказательства критериев}
+
+\begin{gather*}
+	A \subseteq B \cup C \Leftrightarrow A \cap \overline{B} \subseteq C \\
+	A \setminus (B \cup C) = \emptyset \Leftrightarrow (A \cap \overline{B}) \setminus C = \emptyset \\
+	\psi_{A \setminus (B \cup C)} = 0 \Leftrightarrow \psi_{(A \cap \overline{B}) \setminus C} = 0 \\
+	\psi_{A \setminus (B \cup C)} = \psi_{(A \cap \overline{B}) \setminus C}
+\end{gather*}	
 
 \end{document}
