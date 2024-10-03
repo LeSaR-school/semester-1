@@ -168,4 +168,56 @@ $\vec{a} = \dot{\vec{v}}$
 	\vec{a} \times \vec{b} &= -[\vec{a} \times \vec{b}]
 \end{align*}
 
+\pagebreak
+\section{Диинамика}
+
+В динамике есть материальная точка
+
+\subsection{Силы}
+
+\begin{enumerate}
+	\item Контактные
+	\item Полевые
+\end{enumerate}
+
+\subsection{Законы Ньютона}
+
+\begin{enumerate}
+	\item \[ \sum \vec{F} = 0 \Leftrightarrow \vec{a} = 0 \]
+	\item \begin{align*}
+		\vec{a} &= \frac{\sum \vec{F}}{m} \\
+		m \vec{a} &= \sum \vec{F} 
+	\end{align*}
+	\item При применении силы $F_{12}$, всегда есть такая сила $F_{21}$, что:
+	\begin{itemize}
+		\item Силы равны по модулю $|\vec{F}_{12}| = |\vec{F}_{21}|$
+		\item Противоположны по напровлению\ $\vec{F}_{12} = -\vec{F}_{21}$
+		\item Лежат на одной прямой
+		\item Имеют одну природу
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Смыслы массы}
+
+\begin{itemize}
+	\item Инертный
+	\item Гравитационный
+	\item $mc^2$
+\end{itemize}
+
+\subsection{Интегрирование}
+
+\begin{gather*}
+	\vec{a}(t) = \frac{d \vec{v}}{dt} \Rightarrow d \vec{v} = \vec{a}(t) dt \\
+	\vec{v}(t) = \int \vec{a}(t) dt + C_1 \\
+	C_1 = \vec{v}(t = 0) = \vec{v}(t_0) = \vec{v}_0 \\
+	\vec{r}(t) = \int \vec{v}(t)dt + C_2 \\
+	C_2 = \vec{r}(t_0) = \vec{r}_0 \\
+	\int_{v_0}^{v(t)} d\vec{v} = \int_{t_0}^{t} \vec{a}(t) dt \Rightarrow \\
+	\begin{cases}
+		\vec{v}(t) = v_0 + \int_{t_0}^{t} \vec{a}(t) dt \\
+		\vec{r}(t) = r_0 + \int_{t_0}^{t} \vec{v}(t) dt
+	\end{cases}
+\end{gather*}
+
 \end{document}

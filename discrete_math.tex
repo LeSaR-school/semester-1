@@ -381,4 +381,73 @@ $\not \exists y \in X : a \gtrapprox y$
 	\psi_{A \setminus (B \cup C)} = \psi_{(A \cap \overline{B}) \setminus C}
 \end{gather*}	
 
+\subsection{Бинарные отношения}
+
+\subsubsection{Функции}
+
+\begin{gather*}
+	f \subseteq X \times Y \\
+	\forall x \in X, \forall y_1 \in Y, \forall y_2 \in Y, \\
+	\langle x, y_1 \rangle \in f \land \langle x, y_2 \rangle \in f \Rightarrow y_1 = y_2
+\end{gather*}
+
+\begin{gather*}
+	\langle x, y \rangle \in f \subseteq A \times B \\
+	x f y \\
+	y = f(x) \\
+	f: A \to B \\
+	A \mapsto B
+\end{gather*}
+
+\subsubsection{Сюръекция}
+\begin{gather*}
+	f : X \to Y \\
+	\forall y \in Y \exists x \in X : y = f(x)
+\end{gather*}
+
+\subsubsection{Инъекция}
+\begin{gather*}
+	f : X \to Y \\
+	\forall x_1, x_2 \in X, x_1 = x_2 \Leftrightarrow f(x_1) = f(x_2)
+\end{gather*}
+
+\subsubsection{Биекция}
+\begin{gather*}
+	f : X \leftrightarrow Y \\
+	\forall y \in Y \exists x \in X : y = f(x) \land x = f(y)
+\end{gather*}
+
+\subsubsection{Комбинация функций}
+\begin{gather*}
+	g: X \to Y \\
+	f: Y \to Z \\
+	g \circ f = fg : X \to Z \\
+	fg(x) = f(g(x))
+\end{gather*}
+
+\subsubsection{Равенство функций}
+\begin{gather*}
+	f = g \\
+	D_f = D_g = X \\
+	\forall x \in X f(x) = g(x)
+\end{gather*}
+
+\subsection{Функции над множествами}
+\begin{gather*}
+	f: X \to Y \\
+	A \subseteq X \\
+	f(A) = \{y\ |\ y = f(x), x \in A\}
+\end{gather*}
+
+\subsubsection{Свойства}
+
+\begin{enumerate}
+	\item $f(A \cup B) = f(A) \cup f(B)$
+	\item $f(A \cap B) \subseteq f(A) \cap f(B)$
+	\item $f(A \setminus B) \supseteq f(A) \setminus f(B)$
+	\item $f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B)$
+	\item $f^{-1}(A \cap B) = f^{-1}(A) \cap f^{-1}(B)$
+	\item $f^{-1}(A \setminus B) = f^{-1}(A) \setminus f^{-1}(B)$
+\end{enumerate}
+
 \end{document}
