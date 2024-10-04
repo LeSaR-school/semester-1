@@ -396,8 +396,30 @@ $\inf A$ --- инфимум $A$
 Любое ограниченное снизу множество имеет инфимум.
 
 \pagebreak
+\underline{Теорема:}
+\[
+	\forall x \in \mathbb{R}, x > 0 \exists n \in \mathbb{N} : n - 1 < x \le n
+\]
+
+\underline{Принцип Архимеда}
+\[
+\forall h > 0 \forall x \in \mathbb{R}, x > 0 \exists n \in \mathbb{N} : (n - 1)h < x \le nh
+\]
+
+\section{Пределы, последовательности}
+
+\subsection{Последовательности}
+
 \textbf{Последовательность} --- отображение $\mathbb{N}$ в множество любой \\
 природы.
+
+\textbf{Числовая последовательность} --- отображение $\mathbb{N}$ в $\mathbb{R}$.
+\[ \{ a_n \}, a_n \in \mathbb{R}, n \in \mathbb{N} \]
+
+Последовательность называется \textbf{ограниченной}, если множество ее значений ограниченно.
+
+\subsection{Покрытие}
+
 \begin{gather*}
 	n \rightarrow I_n (\text{$I_n$ --- отрезок действительной оси}) \\
 	\{ I_n \} : \forall n \in \mathbb{N}, I_{n + 1} \subset I_n \Rightarrow \\
@@ -424,12 +446,9 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 
 \underline{Теорема:}
 
-Из любого покрытия отрезка интервалами можно выделить конечное подпокрытиеk
-
-\section{Пределы, последовательности}
+Из любого покрытия отрезка интервалами можно выделить конечное подпокрытие
 
 \subsection{Определение предела}
-
 \begin{gather*}
 	\{x_n\}_{n = 1, 2 \dots} \\
 	\lim_{n \to \infty} x_n = a \\
@@ -437,20 +456,67 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 	|x_n - a| < \epsilon, n > N(\epsilon)
 \end{gather*}
 
-\subsection{Пример}
+\underline{Теорема:}
+
+У любой последовательности может быть не более 1 предела
+
+\underline{Доказательство:}
+
+\begin{gather*}
+	\text{let } \exists lim_{n \to \infty} a_n = A_1 \land \\
+	\land \exists lim_{n \to \infty} a_n = A_2 \land A_1 < A_2 \\
+	\text{let } \epsilon = \frac{A_2 - A_1}{3} \\
+	\exists N_1 : \forall n > N_1, |a_N - A_1| < \epsilon \Leftrightarrow
+	A_1 - \epsilon < a_n < A_1 + \epsilon \\
+	\exists N_2 : \forall n > N_2, |a_N - A_2| < \epsilon \Leftrightarrow
+	A_2 - \epsilon < a_n < A_2 + \epsilon \\
+	\text{let } N = max{N_1, N_2} : \forall n > N, \\
+	a_n < A_1 + \epsilon = A_1 + \frac{A_2 - A_1}{3} = \frac{2A_1 - A_2}{3} < \frac{A_1 + 2A_2}{3} = A_2 - \epsilon < a_n \\
+	a_n < a_n
+\end{gather*}
+
+\underline{Замечание:}
+
+Ограниченная последовательность может не иметь предела.
+
+\subsubsection{Пример}
 
 Доказать:
 \[
 	\lim_{n \to \infty} \frac{2x + 3}{n + 1} = 2
 \]
 
-\pagebreak
 Доказательство:
 \begin{gather*}
 	|\frac{2n + 3}{n + 1} - 2| = |\frac{2n + 3 - 2n - 2}{n + 1}| = |\frac{1}{n + 1}| < \epsilon \\
 	n + 1 > \frac{1}{\epsilon} \\
 	n > \frac{1}{\epsilon} - 1 \\
 	N(\epsilon) = \frac{1}{\epsilon} - 1
+\end{gather*}
+
+\subsubsection{Бесконечные пределы}
+
+\[
+(\lim_{n \to \infty} a_n) = \infty \stackrel{def}{\Leftrightarrow} (\forall E > 0 \exists N(E) : \forall n > N : |a_n| > E)
+\]
+\[
+(\lim_{n \to \infty} a_n) = -\infty \stackrel{def}{\Leftrightarrow} (\forall E > 0 \exists N(E) : \forall n > N : |a_n| < -E)
+\]
+
+\textbf{Бесконечно большая} последовательность --- последовательность, предел которой --- $\pm \infty$.
+
+\textbf{Сходящаяся} последовательность --- последовательность, предел \\
+которой --- конечное число.
+
+\textbf{Бесконечно малая} последовательность --- последовательность, \\
+предел которой равен нулю.
+
+\subsubsection{Критерий Коши}
+
+\underline{Утверждение:}
+\begin{gather*}
+	lim_{n \to \infty} a_n = c \in \mathbb{R} \Leftrightarrow \\
+	\Leftrightarrow \forall \epsilon > 0 \exists N(\epsilon) : \forall n, m \in N, n > m > N : |a_n - a_m| < \epsilon
 \end{gather*}
 
 \subsection{Геометрическая прогрессия}
