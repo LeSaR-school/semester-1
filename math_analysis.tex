@@ -526,6 +526,18 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 	\lim_{n \to \inf} = \frac{a}{1 - q}
 \end{gather*}
 
+\subsubsection{Примеры}
 
+\begin{gather*}
+	\lim_{n \to \infty} \sum_{k=1}^{n-1} \frac{k - 1}{n^2} = \lim_{n \to \infty} \frac{1}{n^2} \sum_{k=1}^{n-1} k - 1 = \\
+	= \lim_{n \to \infty} \frac{1}{n^2} \frac{(1 + (n - 1))(n - 1)}{2} = \lim_{n \to \infty} \frac{n^2 - n}{2n^2} = \\
+	\frac{1}{2} + \lim_{n \to \infty} = \frac{1}{2} + 0 = \frac{1}{2}
+\end{gather*}
+
+\begin{gather*}
+	\lim_{n \to \infty} \frac{(n + 1)(n + 2)(n + 3)}{n^3} = \\
+	\lim_{n \to \infty} \frac{n(1 + \frac{1}{n}) \cdot n(1 + \frac{2}{n}) \cdot n(1 + \frac{3}{n})}{n^3} = \\
+	\lim_{n \to \infty} (1 + \frac{1}{n})(1 + \frac{2}{n})(1 + \frac{3}{n}) = 1
+\end{gather*}
 
 \end{document}
