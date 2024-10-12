@@ -346,12 +346,12 @@ $\phi$ --- угол от оси $Ox$ против часовой стрелки
 	\item 371(в, д, ж)
 \end{itemize}
 
-\subsection{Натуральные числа}
+\section{Натуральные числа}
 
 \textbf{Индуктивное множество} --- множество, обладающие тем \\
 свойством, что наряду с элементом $a$, ему принадлежит элемент $a + 1$.
 
-\subsubsection{Определения}
+\subsection{Определения}
 
 Множество \textbf{натуральных чисел} --- минимальное индуктивное \\
 множество, содержащее единицу. То есть пересечение всех индуктивных множеств, \\
@@ -470,7 +470,7 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 	A_1 - \epsilon < a_n < A_1 + \epsilon \\
 	\exists N_2 : \forall n > N_2, |a_N - A_2| < \epsilon \Leftrightarrow
 	A_2 - \epsilon < a_n < A_2 + \epsilon \\
-	\text{let } N = max{N_1, N_2} : \forall n > N, \\
+	\text{let } N = \max\{N_1, N_2\} : \forall n > N, \\
 	a_n < A_1 + \epsilon = A_1 + \frac{A_2 - A_1}{3} = \frac{2A_1 - A_2}{3} < \frac{A_1 + 2A_2}{3} = A_2 - \epsilon < a_n \\
 	a_n < a_n
 \end{gather*}
@@ -513,12 +513,6 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 
 \subsubsection{Критерий Коши}
 
-\underline{Утверждение:}
-\begin{gather*}
-	lim_{n \to \infty} a_n = c \in \mathbb{R} \Leftrightarrow \\
-	\Leftrightarrow \forall \epsilon > 0 \exists N(\epsilon) : \forall n, m \in N, n > m > N : |a_n - a_m| < \epsilon
-\end{gather*}
-
 \subsection{Геометрическая прогрессия}
 
 \begin{gather*}
@@ -539,5 +533,135 @@ B \subseteq \bigcup \limits_{i=1}^{n} A_i
 	\lim_{n \to \infty} \frac{n(1 + \frac{1}{n}) \cdot n(1 + \frac{2}{n}) \cdot n(1 + \frac{3}{n})}{n^3} = \\
 	\lim_{n \to \infty} (1 + \frac{1}{n})(1 + \frac{2}{n})(1 + \frac{3}{n}) = 1
 \end{gather*}
+
+\subsection{Фундаментальная последовательность. \\
+Критерий Коши}
+
+Последовательность $\{ a_n \}$ называется \textbf{фундаментальной}, если \[
+\forall \epsilon > 0 \exists N(\epsilon) : \forall m > n > N : |a_m - a_n| < \epsilon
+\]
+
+\subsubsection{Критерий коши}
+
+Последовательность является фундаментальной $\Leftrightarrow$ \\
+$\Leftrightarrow$ последовательность является сходящейся
+
+\underline{Доказательство $1 \Rightarrow 2$:}
+\begin{gather*}
+	\exists \lim_{n \to \infty} a_n = A, A \in \mathbb{R} \\
+	\forall \epsilon > 0 \exists N(\epsilon) \forall n > N, n \in \mathbb{N} :
+	|a_n - A| < \frac{\epsilon}{2} \\
+	\forall \epsilon > 0 \exists N(\epsilon) \forall m > N, m \in \mathbb{N} :
+	|a_m - A| < \frac{\epsilon}{2} \\
+	|a_n - a_m| = |a_n - A - (a_m - A)| \le |a_n - A| + |a_m - A| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+\end{gather*}
+
+\underline{Доказательство $1 \Leftarrow 2$:}
+\begin{gather*}
+	\forall \epsilon > 0 \exists N(\epsilon) : \forall m > n > N : |a_n - a_m| < \frac{\epsilon}{3} \\
+	\text{let } x_n =\inf_{m \ge n} a_m \\
+	\text{let } y_n =\sup_{m \ge n} a_m \\
+	x_n \le x_{n+1} \le y_{n+1} \le y_n \\
+	\{ [x_n, y_n] \} \text{ --- система вложенных отрезков} \Rightarrow \exists c : \forall n \in \mathbb{N}, c \in [x_n, y_n] \\
+	m > n \\
+	a_n - \frac{\epsilon}{3} < a_m < a_n + \frac{\epsilon}{3} \\
+	a_n - \frac{\epsilon}{3} \le x_m \le c \le y_m \le a_n + \frac{\epsilon}{3} \\
+	|a_n - c| \le \frac{\epsilon}{3} \\
+	|a_m - a_n| < \frac{\epsilon}{3} \\
+	|x_m - a_n| \le \frac{\epsilon}{3} \\
+	|y_m - a_n| \le \frac{\epsilon}{3} \\
+	|a_m - c| \le |a_m - a_n + a_n - c| \le |a_m - a_n| + |a_n - c| \le
+	\frac{\epsilon}{3} + \frac{\epsilon}{3} = \frac{2\epsilon}{3} < \epsilon
+\end{gather*}
+
+\subsection{Алгебраические свойства пределов}
+
+\begin{gather*}
+	\lim_{n \to \infty} a_n = A \\
+	\lim_{n \to \infty} b_n = B \\
+\end{gather*}
+
+\subsubsection{Сложение}
+
+\begin{gather*}
+	(\lim_{n \to \infty} a_n = A) \Leftrightarrow (\forall \epsilon > 0 \exists N_1(\epsilon) :
+	\forall n > N_1, n \in \mathbb{N} : |a_n - A| < \frac{\epsilon}{2}) \\
+	(\lim_{n \to \infty} b_n = B) \Leftrightarrow (\forall \epsilon > 0 \exists N_2(\epsilon) :
+	\forall n > N_2, n \in \mathbb{N} : |b_n - B| < \frac{\epsilon}{2}) \\
+	\text{let } N = \max\{N_1, N_2\} \\
+	\forall n > N : |a_n + b_n - (A + B)| \le |a_n - A| + |b_n - B| \le
+	\frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon \Leftrightarrow \\
+	\Leftrightarrow \lim_{n \to \infty} (a_n + b_n) = A + B
+\end{gather*}
+
+\subsubsection{Умножение}
+
+\begin{gather*}
+	a_n \cdot b_n = (a_n - A + A)(b_n - B + B) = \\
+	= (a_n - A)(b_n - B) + A(b_n - B) + B(a_n - A) + AB \\
+	\forall \epsilon > 0 \exists N_1(\epsilon) : \forall n > N_1 : |a_n - A| < \epsilon \\
+	\forall \epsilon > 0 \exists N_2(\epsilon) : \forall n > N_2 : |b_n - B| < \epsilon \\
+	\forall \epsilon > 0 \exists N_3(\epsilon) : \forall n > N_3 : |b_n - B| < \frac{\epsilon}{3|A|} \\
+	\forall \epsilon > 0 \exists N_4(\epsilon) : \forall n > N_4 : |a_n - A| < \frac{\epsilon}{3|B|} \\
+	\text{let } N = \max\{N_1, N_2, N_3, N_4\} \\
+	\forall n > N : |a_n b_n - AB| \le |a_n - A||b_n - B| + |A||b_n - B| + |B||a_n - A| < \\
+	< \epsilon^2 + |A| \frac{\epsilon}{3|A|} + |B| \frac{\epsilon}{3|B|} < 3 \cdot \frac{\epsilon}{3} = \epsilon \\
+	(\epsilon^2 < \frac{\epsilon}{3} \Leftarrow \epsilon < \frac{1}{3})
+\end{gather*}
+
+\subsubsection{Деление}
+
+\begin{gather*}
+	\frac{a_n}{b_n} - \frac{A}{B} = \frac{a_nB - b_nA}{b_nB} = \\
+	= \frac{(a_n - A)B - (b_n - B)A}{b_nB} = \frac{a_n - A}{b_n} - \frac{b_n - B}{b_n} \cdot \frac{A}{B} \\
+	\exists N_1 : \forall n > N_1 : |b_n| > \frac{B}{2} \\
+	\forall \epsilon > 0 \exists N_2 : \forall n > N_2 : |a_n - A| < \frac{\epsilon|B|}{4} \\
+	\forall \epsilon > 0 \exists N_3 : \forall n > N_3 : |b_n - B| < \frac{\epsilon|B|^2}{4|A|} \\
+	\text{let } N = \max\{N_1, N_2, N_3\} \\
+	\forall n > N : |\frac{a_n}{b_n} - \frac{A}{B}| \le \frac{|a_n - A|}{|b_n|} +
+	\frac{|b_n - B|}{|b_n|} \cdot \frac{|A|}{|B|} < \\
+	< \frac{2\epsilon|B|}{4|B|} + \frac{2\epsilon|B|^2}{4|A||B|} \cdot \frac{|A|}{|B|} =
+	\frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+\end{gather*}
+
+\subsection{Принцип двух полицейских}
+
+\begin{gather*}
+	\begin{cases}
+		\exists \lim_{n \to \infty} a_n = A \\
+		\exists \lim_{n \to \infty} b_n = A \\
+		\forall n \in \mathbb{N} : a_n \le c_n \le b_n
+	\end{cases} \Rightarrow \lim_{c \to \infty} c_n = A
+\end{gather*}
+
+\subsection{Возрастающие и убывающие посл.}
+
+Последовательность $\{ a_n \}$ называется \textbf{возрастающей}, если $\forall n \in \mathbb{N} : a_n < a_{n + 1}$
+
+Последовательность $\{ a_n \}$ называется \textbf{неубывающей}, если $\forall n \in \mathbb{N} : a_n \le a_{n + 1}$
+
+Последовательность $\{ a_n \}$ называется \textbf{убывающей}, если $\forall n \in \mathbb{N} : a_n > a_{n + 1}$
+
+Последовательность $\{ a_n \}$ называется \textbf{невозрастающей}, если $\forall n \in \mathbb{N} : a_n \ge a_{n + 1}$
+
+\subsection{Теорема Вейерштрасса}
+
+Монотонная ограниченная последовательность имеет конечный \\
+предел.
+
+\underline{Доказательство:}
+\begin{gather*}
+	\text{let } a_n : \forall n \in \mathbb{N} : a_{n + 1} \ge a_n \\
+	\exists A : \forall n \in \mathbb{N} : a_n < A \\
+	\lim_{n \to \infty} a_n = a \\
+	\exists c = \sup_{n \in \mathbb{N}} a_n : c - \epsilon < a_n \le c \\
+	\forall m > n : c - \epsilon < a_n \le a_m \le c 
+	\stackrel{\triangle}{\Rightarrow} \lim_{n \to \infty} a_n = c
+\end{gather*}
+
+\subsubsection{Условие существования предела.}
+
+Для того, чтобы монотонная последовательность имела предел, \\
+необходимо и достаточно, чтобы она была ограничена.
 
 \end{document}
