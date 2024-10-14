@@ -5,6 +5,8 @@
 \usepackage[T1, T2A]{fontenc}
 \usepackage[russian,english]{babel}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\Rg}{Rg}
 
 \begin{document}
 \title{Линейная алгебра и аналитическая геометрия}
@@ -321,18 +323,6 @@ bA_{12} + eA_{22} + nA_{32}
 	\end{vmatrix} = \\
 	= -3 * (-28) + 12 = -3 * (-16) = 48
 \end{gather*}
-
-\subsubsection{ДЗ}
-
-№№
-\begin{itemize}
-\item{2.1}
-\item{.50}
-\item{.52}
-\item{.54(б)}
-\item{.57}
-\item{61*}
-\end{itemize}
 
 \subsection{Свойства определителей}
 
@@ -753,16 +743,6 @@ X \begin{pmatrix}
 	\item $X = \dots$ --- мне лень
 \end{enumerate}
 
-\subsubsection{ДЗ}
-
-№№
-\begin{enumerate}
-	\item 2.107
-	\item .110
-	\item .123
-	\item .125
-\end{enumerate}
-
 \subsection{Нахождение решений}
 
 \begin{gather*}
@@ -861,15 +841,15 @@ M_{\text{баз}} = M_r \ne 0 : \forall M_{r+1} = 0\ \lor \not \exists
 
 \subsection{Ранг матрицы}
 
-$Rg A$ --- ранг матрицы $A$
+$\Rg{A}$ --- ранг матрицы $A$
 
 \textbf{Ранг матрицы} --- количество ее линейно независимых строк \\
 или столбцов
 
 \subsubsection*{Свойство ранга}
-\[ Rg A = \dim M_{\text{баз}} \]
+\[ \Rg{A} = \dim M_{\text{баз}} \]
 
-\subsection{Нахождение $Rg A$ и $M_{\text{баз}}$}
+\subsection{Нахождение $\Rg{A}$ и $M_{\text{баз}}$}
 
 \[
 A_{3 \times 5} = \begin{pmatrix}
@@ -881,7 +861,7 @@ A_{3 \times 5} = \begin{pmatrix}
 
 Пусть $r = 1$
 \[
-	M_1^{'} = 8 \ne 0 \rightarrow Rg A \ge 1, M_{\text{баз}} = 8
+	M_1^{'} = 8 \ne 0 \rightarrow \Rg{A} \ge 1, M_{\text{баз}} = 8
 \]
 
 Пусть $r = 2$
@@ -890,7 +870,7 @@ A_{3 \times 5} = \begin{pmatrix}
 		2 & 3 \\
 		7 & 8
 	\end{vmatrix}
-	= 5 \ne 0 \rightarrow Rg A \ge 2, M_{\text{баз}} = 5
+	= 5 \ne 0 \rightarrow \Rg{A} \ge 2, M_{\text{баз}} = 5
 \]
 
 Пусть $r = 3$
@@ -900,7 +880,7 @@ A_{3 \times 5} = \begin{pmatrix}
 		6 & 7 & 8 \\
 		11 & 12 & 13
 	\end{vmatrix}
-	= 5 \ne 0 \rightarrow Rg A \ge 2, M_{\text{баз}} = 5
+	= 5 \ne 0 \rightarrow \Rg{A} \ge 2, M_{\text{баз}} = 5
 \]
 
 \subsection{Операции}
@@ -1033,7 +1013,7 @@ A_{3 \times 5} = \begin{pmatrix}
 
 \begin{gather*}
 	M_\text{баз} = M_2 = M_{I, II}^{II, III} \\
-	Rg A_{3 \times 5} = 2
+	\Rg{A_{3 \times 5}} = 2
 \end{gather*}
 
 \subsubsection*{№2.151}
@@ -1128,7 +1108,7 @@ A_{4 \times 4} = \begin{pmatrix}
 \end{gather*}
 
 \[
-Rg A_{3 \times 5} = 2
+\Rg{A_{3 \times 5}} = 2
 \]
 
 \subsection{Количество решений}
@@ -1177,7 +1157,7 @@ Rg A_{3 \times 5} = 2
 		0 & 0 & 0 & 0 & \vline & 0 \\
 		0 & 0 & 0 & 0 & \vline & 0
 	\end{pmatrix} \\
-	Rg = 2 \\
+	\Rg{A} = 2 \\
 	n - r = 4 - 2 = 2 \text{ --- число параметров}
 \end{gather*}
 
@@ -1191,17 +1171,219 @@ Rg A_{3 \times 5} = 2
 	\item Разделить переменные на базисные колонны, выбрав подходящий \\
 	базисный минор.
 	\item Выразить базисные переменные через свободные. \\
-	Если свободныш переменных нет, одно решение.
+	Если свободных переменных нет, одно решение.
 	\item Записать ответ.
 \end{enumerate}
 
-\subsection{ДЗ}
+\subsection{Однородные СЛАУ и их ФСР}
 
-№№
-\begin{itemize}
-	\item 2.191
-	\item .192
-	\item .201
-\end{itemize}
+\begin{gather*}
+	A\vec{x} = \vec{0} \Rightarrow \exists \vec{x} = \vec{0} \\
+	r = \Rg{(A | \vec{0})}
+\end{gather*}
+Есть $\vec{x} \ne \vec{0}$
+
+\subsubsection*{№2.226}
+
+\begin{enumerate}
+	\item Лестничный вид
+	\begin{gather*}
+		\begin{cases}
+			2x_1 - 3x_2 + x_3 = 0 \\
+			x_1 + x_2 + x_3 = 0 \\
+			3x_1 - 2x_2 + 2x_3 = 0
+		\end{cases} \\
+		(A | \vec{b}) = \begin{pmatrix}
+			1 & 1 & 1 & 0 \\
+			2 & -3 & 1 & 0 \\
+			3 & -2 & 2 & 0
+		\end{pmatrix} \begin{matrix}
+			I \\ II - 2I \\ III - 3I
+		\end{matrix} \sim \\
+		\sim \begin{pmatrix}
+			1 & 1 & 1 & 0 \\
+			0 & -5 & -1 & 0 \\
+			0 & -5 & -1 & 0
+		\end{pmatrix} \sim
+		\begin{pmatrix}
+			1 & 1 & 1 & 0 \\
+			0 & -5 & -1 & 0 \\
+			0 & 0 & 0 & 0
+		\end{pmatrix} \\
+		\Rg{A} = r = 2 < 3 = n
+	\end{gather*}
+	\item Обратный ход
+	\begin{enumerate}
+		\item Скалярный
+		\[
+			M_{\text{баз}} = \stackrel{\begin{matrix}
+				x_1 & x_2
+			\end{matrix}}{\begin{vmatrix}
+				1 & 1 \\
+				0 & -5 \\
+			\end{vmatrix}} \ne 0
+		\]
+		$x_1, x_2$ --- базисные, $x_3$ --- свобод. \\
+		\[
+		\begin{cases}
+			x_1 + x_2 = -x_3 \\
+			-5x_2 = x_3
+		\end{cases} \Rightarrow \begin{cases}
+			x_2 = -0.2x_3 \\
+			x_1 = -0.8x_3
+		\end{cases}
+		\]
+		\item Матричный
+		\begin{gather*}
+			(A | \vec{b}) \sim \begin{pmatrix}
+				1 & 1 & 1 & 0 \\
+				0 & -5 & -1 & 0 \\
+				0 & 0 & 0 & 0
+			\end{pmatrix} \begin{matrix}
+				 I + II \\ II \\ III
+			\end{matrix} \sim
+			\begin{pmatrix}
+				1 & -4 & 0 & 0 \\
+				0 & -5 & -1 & 0 \\
+				0 & 0 & 0 & 0	
+			\end{pmatrix} \Rightarrow \\
+			\Rightarrow \begin{cases}
+				x_1 - 4x_2 = 0 \\
+				-5x_2 - x_3 = 0
+			\end{cases} \Leftrightarrow \begin{cases}
+				x_1 = 4x_2 \\
+				x_3 = -5x_2
+			\end{cases}
+		\end{gather*}
+	\end{enumerate}
+	\item Подстановка
+	\[
+	\begin{cases}
+		x_1 = -0.8c \\
+		x_2 = -0.2c \\
+		x_3 = c \in \mathbb{R}
+	\end{cases}
+	\]
+	\item ФСР \\
+	\begin{tabular}{c|c}
+		Перем. & Знач. \\
+		\hline
+		$x_1$ & -0.8 \\
+		$x_2$ & -0.2 \\
+		$x_3$ & 1
+	\end{tabular}
+	\[
+	\vec{\phi}_1 = \begin{pmatrix}
+		-0.8 \\ -0.2 \\ 1
+	\end{pmatrix} \Rightarrow
+	\vec{x} = c \vec{\phi}_1
+	\]
+\end{enumerate}
+
+\subsection{Связь однородной и неоднородной \\
+соответствующих систем}
+
+\begin{gather*}
+	A \vec{x} = =\vec{b} \ne \vec{0} \leftrightarrow A \vec{x} = \vec{0} \\
+	\vec{x}_{\text{одн}} = c_1 \vec{\phi}_1 + \dots + c_{n-r} \vec{\phi}_{n-r} \\ 
+\end{gather*}
+
+\subsubsection*{№2.210}
+
+\[
+	\begin{cases}
+		2x_1 + 7x_2 + 3x_3 + x_4 = 6 \\
+		3x_1 + 5x_2 + 2x_3 + 2x_4 = 4 \\
+		9x_1 + 4x_2 + x_3 + 7x_4 = 2
+	\end{cases}
+\]
+
+\begin{enumerate}
+	\item Лестничный вид
+	\begin{gather*}
+		(A | \vec{b}) = \begin{pmatrix}
+			2 & 7 & 3 & 1 & 6 \\
+			3 & 5 & 2 & 2 & 4 \\
+			9 & 4 & 1 & 7 & 2
+		\end{pmatrix} \begin{matrix}
+			I \\ 2II - 3I \\ III - 3II
+		\end{matrix} \sim \\
+		\sim \begin{pmatrix}
+			2 & 7 & 3 & 1 & 6 \\
+			0 & -11 & -5 & 1 & -10 \\
+			0 & -11 & -5 & 1 & -10
+		\end{pmatrix} \begin{matrix}
+			I \\ II \\ III - II
+		\end{matrix} \sim \begin{pmatrix}
+			2 & 7 & 3 & 1 & 6 \\
+			0 & -11 & -5 & 1 & -10 \\
+			0 & 0 & 0 & 0 & 0
+		\end{pmatrix} \\
+		\Rg{A} = r = 2 < 4 = n
+	\end{gather*}
+	\item Обратный ход
+	\[
+	M_{\text{баз}} = \stackrel{\begin{matrix}
+		x_1 & x_4
+	\end{matrix}}{\begin{vmatrix}
+		2 & 1 \\
+		0 & 1
+	\end{vmatrix}}
+	\]
+	$x_1, x_4$ --- базисные, $x_2, x_3$ --- свободные \\
+	\begin{gather*}
+		\begin{pmatrix}
+			2 & 7 & 3 & 1 & 6 \\
+			0 & -11 & -5 & 1 & -10 \\
+			0 & 0 & 0 & 0 & 0
+		\end{pmatrix} \begin{matrix}
+			I - II \\ II \\ III
+		\end{matrix} \sim
+		\begin{pmatrix}
+			2 & 18 & 8 & 0 & 16 \\
+			0 & -11 & -5 & 1 & -10 \\
+			0 & 0 & 0 & 0 & 0
+		\end{pmatrix} \Rightarrow \\
+		\Rightarrow \begin{cases}
+			2x_1 + 18x_2 + 8x_3 = 16 \\
+			-11x_2 -5x_3 + x_4 = -10
+		\end{cases} \Leftrightarrow \begin{cases}
+			x_1 = 8 - 9x_2 - 4x_3 \\
+			x_4 = -10 + 11x_2 + 5x_3
+		\end{cases}
+	\end{gather*}
+	\item Общее решение
+	\begin{gather*}
+		\begin{cases}
+			x_1 = 8 - 9c_1 - 4c_2 \\
+			x_2 = c_1 \\
+			x_3 = c_2 \\
+			x_4 = -10 + 11c_1 + 5c_2
+		\end{cases} \\
+		\vec{x} = \vec{\phi}_0 + c_1 \vec{\phi}_1 + c_2 \vec{\phi}_2
+	\end{gather*}
+	\item Декомпозиция (разложение)
+	\begin{gather*}
+		\vec{x} = \begin{pmatrix}
+			x_1 \\ x_2 \\ x_3 \\ x_4
+		\end{pmatrix} =
+		\begin{pmatrix}
+			8 & -9c_1 & -4c_2 \\
+			0 & +c_1 & 0 \\
+			0 & 0 & +c_2 \\
+			-10 & +11c_1 & +5c_2
+		\end{pmatrix} = \\
+		= \begin{pmatrix}
+			8 \\ 0 \\ 0 \\ -10
+		\end{pmatrix} +
+		c_1 \begin{pmatrix}
+			-9 \\ 1 \\ 0 \\ 11
+		\end{pmatrix} +
+		c_2 \begin{pmatrix}
+			-4 \\ 0 \\ 1 \\ 5
+		\end{pmatrix}
+	\end{gather*}
+	\item Проверка...
+\end{enumerate}
 
 \end{document}
