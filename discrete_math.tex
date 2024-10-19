@@ -7,6 +7,9 @@
 \usepackage{amssymb}
 \usepackage[a4paper, margin=2.5cm]{geometry}
 
+\DeclareMathOperator*{\Let}{let}
+\DeclareMathOperator*{\If}{if}
+
 \begin{document}
 
 \title{Дискретная математика}
@@ -55,7 +58,7 @@ $A \subseteq B, B \subseteq C \Rightarrow A \subseteq C$
 
 $A = B \Leftrightarrow A \subseteq B, B \subseteq A$
 
-\subsubsection{Примеры}
+\subsubsection*{Примеры:}
 
 $\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}$
 
@@ -107,7 +110,7 @@ $|P(A)| = 2^{|A|}$
 	\item $A \setminus B = \emptyset$
 \end{itemize}
 
-\subsubsection{Примеры}
+\subsubsection*{Примеры:}
 
 Пусть $A = [5; 9), B = [6; 10), C = [4; 8)$
 
@@ -351,7 +354,7 @@ $\not \exists y \in X : a \gtrapprox y$
 
 {\large Доказательство:}
 \begin{gather*}
-	\text{let } x \in A \cap \overline{B} \Rightarrow x \in A \land x \not \in B \\
+	\Let x \in A \cap \overline{B} \Rightarrow x \in A \land x \not \in B \\
 	x \in a \stackrel{\text{усл}}{\Rightarrow} x \in B \cup C \Rightarrow x \in B \lor x \in C \\
 	\begin{cases}
 		x \in B \lor x \in C \\
@@ -367,9 +370,9 @@ $\not \exists y \in X : a \gtrapprox y$
 
 {\large Доказательство:}
 \begin{gather*}
-	\text{let } x \in A \\
-	\text{if } x \in B \Rightarrow x \in B \cup C \\
-	\text{if } x \not \in B \Rightarrow x \in A \cap \overline{B} \stackrel{\text{усл}}{\Rightarrow} x \in C \Rightarrow x \in B \cup C
+	\Let x \in A \\
+	\If x \in B \Rightarrow x \in B \cup C \\
+	\If x \not \in B \Rightarrow x \in A \cap \overline{B} \stackrel{\text{усл}}{\Rightarrow} x \in C \Rightarrow x \in B \cup C
 \end{gather*}
 
 \subsection{Метод доказательства критериев}
@@ -381,9 +384,9 @@ $\not \exists y \in X : a \gtrapprox y$
 	\psi_{A \setminus (B \cup C)} = \psi_{(A \cap \overline{B}) \setminus C}
 \end{gather*}	
 
-\subsection{Бинарные отношения}
+\subsection{Виды бинарных отношений}
 
-\subsubsection{Функции}
+\subsubsection{Функция}
 
 \begin{gather*}
 	f \subseteq X \times Y \\
@@ -415,21 +418,6 @@ $\not \exists y \in X : a \gtrapprox y$
 \begin{gather*}
 	f : X \leftrightarrow Y \\
 	\forall y \in Y \exists x \in X : y = f(x) \land x = f(y)
-\end{gather*}
-
-\subsubsection{Комбинация функций}
-\begin{gather*}
-	g: X \to Y \\
-	f: Y \to Z \\
-	g \circ f = fg : X \to Z \\
-	fg(x) = f(g(x))
-\end{gather*}
-
-\subsubsection{Равенство функций}
-\begin{gather*}
-	f = g \\
-	D_f = D_g = X \\
-	\forall x \in X f(x) = g(x)
 \end{gather*}
 
 \subsection{Функции над множествами}
@@ -476,5 +464,98 @@ $\overline{\overline{A}} = |A| = \text{card} A$
 \]
 
 Множество, не являющееся конечным, является \textbf{бесконечным}.
+
+\subsection{Прямое (Декартово) произведение}
+\begin{gather*}
+	X, Y \\
+	X \times Y = \{ \langle x, y \rangle | x \in X, y \in Y \} \\
+	X \times Y \ne Y \times X \\
+	X \times X = X^2 \\
+	D_{X \times Y} = X \text{ --- область определения} \\
+	E_{X \times Y} = Y \text{ --- область значений}
+\end{gather*}
+
+\subsubsection*{Примеры:}
+
+Доказать:
+\[
+L = (A \times B) \cap (C \times D) = (A \cap C) \times (B \cap D) = R
+\]
+
+Доказательство:
+\begin{enumerate}
+	\item \begin{gather*}
+		L \subseteq R \\
+		\Let \langle x, y \rangle \in L \Rightarrow
+		\begin{cases}
+			\begin{cases}
+				x \in A \\
+				y \in B
+			\end{cases} \\
+			\begin{cases}
+				x \in C \\
+				y \in D
+			\end{cases}
+		\end{cases} \Rightarrow
+		\begin{cases}
+			x \in A \cap C \\
+			y \in B \cap D
+		\end{cases} \Rightarrow
+		\langle x, y \rangle \in R
+	\end{gather*}
+	\item $R \subseteq L$ аналогично
+\end{enumerate}
+
+\subsubsection{Операции}
+
+\begin{enumerate}
+	\item $\cup, \cap, \dots$
+	\item Обратное отношение
+	\[
+		\rho^{-1} = \{ \langle x, y \rangle | x, y \in X : \langle y, x \rangle \in \rho \}
+	\]
+	\item Композиция
+	\[
+		\rho_1 \circ \rho_2 = \{ \langle x, y \rangle | \exists z \in X :
+		\langle x, z \rangle \in \rho_2, \langle z, y \rangle \in \rho_1 \}
+	\]
+	То есть
+	\begin{gather*}
+		f \circ g = f(g(x)) \\
+		\begin{cases}
+			\langle x, z \rangle: z = g(x) \\
+			\langle z, y \rangle: y = f(z)
+		\end{cases} \Rightarrow \langle x, y \rangle: y = f(g(x))
+	\end{gather*}
+\end{enumerate}
+
+Свойства:
+
+\begin{enumerate}
+	\item \[ (\rho^{-1})^{-1} = \rho \]
+	\item \[ (\rho_1 \circ \rho_2)^{-1} = \rho_2^{-1} \circ \rho_1^{-1} \]
+\end{enumerate}
+
+\subsection{Условия свойств}
+
+\[
+d = \{ \langle x, x \rangle | \forall x \in X \}
+\]
+$d$ --- отношение-диагональ
+
+\subsubsection{Рефлексивности}
+\[ d \subseteq \rho \]
+
+\subsubsection{Симметричности}
+\[ \rho = \rho^{-1} \]
+
+\subsubsection{Антисимметричности}
+\[ \rho \cap \rho^{-1} \subseteq d \]
+
+\subsubsection{Асимметричности}
+\[ \rho \cap \rho^{-1} = \emptyset \]
+
+\subsubsection{Транзитивность}
+\[ \rho^2 \subseteq \rho \]
 
 \end{document}
