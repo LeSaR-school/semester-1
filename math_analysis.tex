@@ -9,6 +9,7 @@
 
 \DeclareMathOperator*{\Let}{let}
 \DeclareMathOperator*{\If}{if}
+\DeclareMathOperator*{\V}{V}
 
 \begin{document}
 
@@ -763,5 +764,44 @@ $\Leftrightarrow$ последовательность является сход
 \lim_{x \to 0} \ln \left((1 + x)^{\frac{1}{x}}\right) = 
 \ln \left(\lim_{x \to 0} (1 + x)^\frac{1}{x}\right) = \ln e = 1
 \]
+
+\subsection{База}
+
+\textbf{База} --- такой набор множеств $\mathbb{B}$, обладающий следующими \\
+свойствами:
+
+\begin{enumerate}
+	\item \[ \emptyset \not \in \mathbb{B} \]
+	\item \[ \forall B_1, B_2 \in \mathbb{B} \exists B_3 \in \mathbb{B} : B_3 \subseteq B_1 \cap B_2 \]
+\end{enumerate}
+
+\subsubsection{Примеры баз}
+
+\begin{enumerate}
+	\item База $x \to x_0$
+	\[ B = (a, b) \setminus \{ x_o \}, a < b \]
+	\item База $x \to \infty$
+	\[ B = \mathbb{R} \setminus [a, b], a < 0 < b \]
+	\item База $x \to +\infty$
+	\[ B = (a, +\infty) \]
+	\item База $x \to -\infty$
+	\[ B = (-\infty, a) \]
+	\item База $x \to x_0^{+}$
+	\[ B = (x_0, x_0 + a), a > 0 \]
+	\item База $x \to x_0^{-}$
+	\[ B = (x_0 - a, x_0), a > 0 \]
+\end{enumerate}
+
+\subsubsection{Окрестность точки}
+
+$\V(A)$ --- \textbf{окрестность точки} $A$
+
+\[ (\lim_{\mathbb{B}} f(x) = A) \stackrel{\triangle}{\Leftrightarrow}
+(\forall \V(A) \exists B \in \mathbb{B} : f(B) \subseteq \V(A)) \]
+
+\begin{gather*}
+	(\lim_{x \to a} = A) \stackrel{\triangle}{\Leftrightarrow} \\
+	(\forall \epsilon > 0 \exists \delta(\epsilon) > 0 : \forall x \ne a : |x - a| < \delta, |f(x) - A| < \epsilon)
+\end{gather*}
 
 \end{document}

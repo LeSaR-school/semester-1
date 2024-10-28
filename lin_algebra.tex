@@ -7,7 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \DeclareMathOperator*{\Rg}{Rg}
-\DeclareMathOperator*{\Tz}{tz}
+\DeclareMathOperator*{\Tr}{tr}
 
 \begin{document}
 \title{Линейная алгебра и аналитическая геометрия}
@@ -1397,8 +1397,8 @@ $\vec{x} \ne \vec{0}, A\vec{x} = \lambda \vec{x}$
 \begin{enumerate}
 	\item \begin{gather*}
 		\det(A - \lambda E) = 0 \\
-		\phi (\lambda) = (-\lambda)^n + \Tz A \cdot (-\lambda)^{n-1} + \dots + \det A \\
-		\Tz A = \sum_{i=1}^{n} A_{ii} \text{ --- след матрицы}
+		\phi (\lambda) = (-\lambda)^n + \Tr A \cdot (-\lambda)^{n-1} + \dots + \det A \\
+		\Tr A = \sum_{i=1}^{n} A_{ii} \text{ --- след матрицы}
 	\end{gather*}
 	Тогда $\lambda_1, \lambda_2 \dots \lambda_n$ --- спектр $A$
 	\item \begin{gather*}
@@ -1442,7 +1442,7 @@ $\vec{x} \ne \vec{0}, A\vec{x} = \lambda \vec{x}$
 		= (2 - \lambda)(\lambda^2 - 4\lambda + 8) = -\lambda^3 + 6\lambda^2 - 12\lambda + 8
 	\end{gather*}
 	Проверки: \begin{enumerate}
-		\item Коэффициент при $(-\lambda)^{3-1} = \lambda^2 : \Tz A = 0 + 4 + 2 = 6$
+		\item Коэффициент при $(-\lambda)^{3-1} = \lambda^2 : \Tr A = 0 + 4 + 2 = 6$
 		\item Свободный член $\det A = \begin{vmatrix}
 			0 & 1 & 0 \\
 			-4 & 4 & 0 \\
