@@ -765,6 +765,62 @@ $\Leftrightarrow$ последовательность является сход
 \ln \left(\lim_{x \to 0} (1 + x)^\frac{1}{x}\right) = \ln e = 1
 \]
 
+\subsection{Односторонние пределы}
+
+Стремление справа --- $\lim_{x \to a^{+}}$
+
+Стремление слева --- $\lim_{x \to a^{-}}$
+
+\subsubsection*{Примеры:}
+
+\begin{gather*}
+	\lim_{x \to +0} \frac{|\sin x|}{x^{>0}} = 1 \\
+	\lim_{x \to -0} \frac{|\sin x|}{x^{<0}} = -1 \\
+\end{gather*}
+\begin{gather*}
+	\lim_{x \to 2^{+}} \frac{x}{x-2} = -\infty \\
+	\lim_{x \to 2^{-}} \frac{x}{x-2} = \infty \\
+\end{gather*}
+
+\subsection{Сравнение бесконечно малых}
+
+\begin{gather*}
+	f(x), g(x) \\
+	\lim_{x \to a} f(x) = 0 \\
+	\lim_{x \to a} g(x) = 0 \\
+	\If \lim_{x \to a} \frac{f(x)}{g(x)} = C \text{ --- const}
+	\Rightarrow f(x) = O(g(x)) \\
+	\If \lim_{x \to a} \frac{f(x)}{g(x)} = 0
+	\Rightarrow f(x) = o(g(x)) \\
+	\lim_{x \to a} \frac{f(x)}{(x - a)^n} = C \text{ --- const} \ne 0
+	\Rightarrow f(x) \sim C \cdot x^n
+\end{gather*}
+
+\subsubsection*{Примеры:}
+
+\begin{gather*}
+	x \to 0 \\
+	f(x) = 1 - \cos x \\
+	\lim_{x \to 0} \frac{\sin^2 x}{x^n(1 + \cos x)} = \frac{1}{2} \\
+	\begin{cases}
+		C = \frac{1}{2} \\
+		n = 2
+	\end{cases}
+	\Rightarrow f(x) \sim \frac{x^2}{2}
+\end{gather*}
+\begin{gather*}
+	x \to 0 \\
+	f(x) = \sqrt{x - \sqrt{x}} \\
+	\lim_{x \to 0} \frac{\sqrt{x - \sqrt{x}}}{x^n} = \\
+	= \lim_{x \to 0} \frac{\sqrt[4]{x} \cdot \sqrt{\sqrt{x} + 1}}{x^n} = \\
+	= \lim_{x \to 0} \frac{\sqrt[4]{x} \cdot 1}{x^{\frac{1}{4}}} = 1 \\
+	\begin{cases}
+		C = 1 \\
+		n = \frac{1}{4}
+	\end{cases}
+	\Rightarrow f(x) \sim \sqrt[4]{x}
+\end{gather*}
+
 \subsection{База}
 
 \textbf{База} --- такой набор множеств $\mathbb{B}$, обладающий следующими \\
