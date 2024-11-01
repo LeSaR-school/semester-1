@@ -554,9 +554,62 @@ $d$ --- отношение-диагональ
 
 \subsubsection{Асимметричности}
 \[ \rho \cap \rho^{-1} = \emptyset \]
+\subsubsection{Частичный порядок}
+
+$\rho$ на $X$ --- ЧП, если $\rho$ --- рефлексивно, антисимметрично, транзитивно
+
 
 \subsubsection{Транзитивность}
 \[ \rho^2 \subseteq \rho \]
+
+\subsection{Специальные бинарные отношения}
+
+\subsubsection{Частичный порядок}
+
+$\rho$ на $X$ --- ЧП, если $\rho$ --- рефлексивно, антисимметрично, транзитивно
+
+ЧП обозначается символом $\preceq$
+
+\subsubsection*{Примеры:}
+
+\begin{enumerate}
+	\item $\subseteq, U$
+	\item $\le, \mathbb{R}$
+\end{enumerate}
+
+\subsubsection{Полный порядок}
+
+$\rho$ на $X$ --- ПП, если $\rho$ --- ЧП, где
+$\forall a, b \in X : a \rho b \lor b \rho a$
+
+\pagebreak
+\underline{Приведение к линейному порядку:}
+
+\begin{gather*}
+	X_1 = \min \limits_{X} \rho \\
+	X_2 = \min \limits_{X \setminus X_1} \rho \\
+	X_3 = \min \limits_{X \setminus (X_1 \cup X_2)} \rho \\
+	\vdots \\
+	X_k = \min \limits_{X \setminus (\bigcup \limits_{i=1}^{k-1} X_i)} \rho \\
+	X_{k+1} = \emptyset
+\end{gather*}
+
+\subsubsection{Отношение эквивалентности}
+
+$\rho$ на $X$ --- EQ, если $\rho$ --- рефлексивно, симметрично, транзитивно
+
+\subsubsection{Класс эквивалентности}
+
+\[
+[x]_\rho = { y \in X : x \rho y }
+\]
+
+\subsection{Диаграммы Хассе}
+
+\begin{gather*}
+	x \prec y \Leftrightarrow x \preceq y \land x \ne y \\
+	x \text{ покрывает } y \Leftrightarrow \not \exists u \in X : x \prec u \prec y
+\end{gather*}
 
 \section{Математическая логика}
 
