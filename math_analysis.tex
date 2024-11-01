@@ -860,4 +860,70 @@ $\V(A)$ --- \textbf{окрестность точки} $A$
 	(\forall \epsilon > 0 \exists \delta(\epsilon) > 0 : \forall x \ne a : |x - a| < \delta, |f(x) - A| < \epsilon)
 \end{gather*}
 
+\subsubsection{Свойства баз}
+
+\underline{Утверждение:}
+\begin{gather*}
+	\exists \lim_{\mathbb{B}} f(x) = a \\
+	\exists \lim_{\mathbb{B}} g(x) = b \\
+	b > a
+\end{gather*}
+
+\underline{Доказать:}
+\[
+\exists B_1 \in \mathbb{B}, \forall x \in B_1 : f(x) < g(x)
+\]
+
+\underline{Доказательство:}
+\begin{gather*}
+	\Let \epsilon = \frac{b - a}{2} \\
+	\begin{cases}
+		\exists B_2 \in \mathbb{B}, \forall x \in B_2 : |f(x) - a| < \epsilon \Rightarrow
+		f(x) < a + \epsilon = \frac{a + b}{2} \\
+		\exists B_3 \in \mathbb{B}, \forall x \in B_3 : |g(x) - b| < \epsilon \Rightarrow
+		g(x) > b - \epsilon = \frac{a + b}{2}
+	\end{cases} \\
+	\Let B_1 = B_2 \cap B_3, B_1 \in \mathbb{B} \Rightarrow \\
+	\Rightarrow \forall x \in B_1 : f(x) < \frac{a + b}{2} < g(x)
+\end{gather*}
+
+
+\underline{Утверждение:}
+\begin{gather*}
+	\exists \lim_{\mathbb{B}} f(x) = a \\
+	\exists \lim_{\mathbb{B}} g(x) = a \\
+	\exists B_1 \in \mathbb{B}, \forall x \in B_1 : f(x) \le h(x) \le g(x)
+\end{gather*}
+
+\underline{Доказать:}
+\[
+\exists \lim_{\mathbb{B}} h(x) = a
+\]
+
+\underline{Доказательство:}
+\begin{gather*}
+	\forall \epsilon > 0 \\
+	\exists B_2 \in \mathbb{B}, \forall x \in B_2 : a - \epsilon < f(x) \\
+	\exists B_3 \in \mathbb{B}, \forall x \in B_3 : g(x) < a + \epsilon \\
+	\Let B_4 = B_1 \cap B_2 \cap B_3, B_4 \in \mathbb{B}, \forall x \in B_4 : \\
+	a - \epsilon < f(x) \le h(x) \le g(x) < a + \epsilon \\
+	a - \epsilon < h(x) < a + \epsilon \Rightarrow |h(x) - a| < \epsilon \Rightarrow
+	\lim_{\mathbb{B}} h(x) = a
+\end{gather*}
+
+\subsubsection{Критерий Коши существования придела функции}
+
+\[
+\omega(f, B) = \sup \limits_{B} |f(x_1) - f(x_2)| \forall x_1, x_2 \in \mathbb{R}
+\]
+
+\underline{Утверждение:}
+\[
+\left(
+	\exists \lim_{\mathbb{B}} f(x) = a \in \mathbb{R}
+\right) \Leftrightarrow \left(
+	\forall \epsilon > 0, \exists B \in \mathbb{B}, \omega(f, B) < \epsilon
+\right)
+\]
+
 \end{document}
