@@ -611,6 +611,62 @@ $\rho$ на $X$ --- EQ, если $\rho$ --- рефлексивно, симмет
 	x \text{ покрывает } y \Leftrightarrow \not \exists u \in X : x \prec u \prec y
 \end{gather*}
 
+\subsection{Мощность множеств}
+
+$A \sim B$ --- равномощны, если $\exists$ биекция $\phi: A \to B$
+
+$\sim$ --- отношение эквивалентности
+
+\begin{enumerate}
+	\item $\sim$ рефлективно, $\phi: A \to A, \phi_A$ --- биекция
+	\item $\sim$ симметрично, $\phi: A \to B$ --- биекция,
+	$\phi^{-1}$ --- биекция
+	\item $\sim$ транзитивно, $\phi: A \to B, \psi: B \to C$ --- биекции,
+	$\phi \circ \psi$ --- биекция
+\end{enumerate}
+
+\subsubsection{Конечные множества}
+
+\begin{gather*}
+	A = \{ a_1, a_2 \dots a_m \} \\
+	B = \{ b_1, b_2 \dots b_k \} \\
+	A \sim B \Leftrightarrow k = m
+\end{gather*}
+
+\subsubsection{Счетные множества $A \sim \mathbb{N}$}
+
+\begin{gather*}
+	\mathbb{Z} \sim \mathbb{N} \\
+	z \in \mathbb{Z}, n \in \mathbb{N} \\
+	\phi : Z \to N \\
+	n = \phi(z) = \begin{cases}
+		-2z + 1, \If z \le 0 \\
+		2z, \If z > 0
+	\end{cases}
+\end{gather*}
+
+\subsubsection{Континуум $A \sim [0, 1]$}
+
+Теорема Кантора: $[0, 1]$ --- несчетно
+
+\[ [0, 1] \sim (0, 1) \sim [0, 1) \sim (0, 1] \]
+
+\begin{gather*}
+	\mathbb{R} \sim [0, 1] \\
+	r \in \mathbb{R} \\
+	\phi(r) = \frac{\arctan(r)}{\pi} + \frac{1}{2} \\
+	E(\phi(r)) = (0, 1) \sim [0, 1]
+\end{gather*}
+
+\begin{gather*}
+	\begin{cases}
+		\mathbb{R} = \mathbb{Q} \cup \mathbb{I} \\
+		\mathbb{R} \sim [0, 1] \\
+		\mathbb{Q} \sim \mathbb{N}
+	\end{cases}
+	\Rightarrow \mathbb{I} \sim [0, 1]
+\end{gather*}
+
 \section{Математическая логика}
 
 \subsection{Логика высказываний}
@@ -662,5 +718,17 @@ $G = \{ g_1 = +, g_2 = \cdot, g_3 = 1 \}$
 Многочленом Жегалкина называется формула логики  \\
 выскаызваний, записанная в системе функций $\{ +, \cdot, 1 \}$, \\
 и приведенная к виду многочлена.
+
+\subsubsection{Тавтология. Правильные рассуждения}
+
+\[ A: \langle x_1 \dots x_n \rangle \]
+
+$A$ --- тождественно истинна (тавтология), если $A$ --- истина на любой оценке
+
+$A$ --- выполнима, если $A$ --- истина на хотя бы одной оценке
+
+$A$ --- опровержима, если $A$ --- ложь на хотя бы одной оценке
+
+$A$ --- тождественно ложна, если $A$ --- ложь на любой оценке
 
 \end{document}
