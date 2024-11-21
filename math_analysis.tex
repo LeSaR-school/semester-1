@@ -9,6 +9,7 @@
 
 \DeclareMathOperator*{\Let}{let}
 \DeclareMathOperator*{\If}{if}
+\DeclareMathOperator*{\Const}{const}
 \DeclareMathOperator*{\V}{V}
 
 \begin{document}
@@ -377,7 +378,7 @@ $\sup A$ --- супремум $A$
 	\forall a \in A, b \in B : a \le b \stackrel{A16}{\Rightarrow} \\
 	\stackrel{A16}{\Rightarrow} \exists c \in \mathbb{R} :
 	\forall a \in A, b \in B \Rightarrow a \le c \le b \Rightarrow \\
-	\Rightarrow c \stackrel{\triangle}{=} \sup A
+	\Rightarrow c \triangleq \sup A
 \end{gather*}
 
 \textbf{Точная нижняя грань (инфимум)} множества $A$ --- наибольшая минората $A$
@@ -658,7 +659,7 @@ $\Leftrightarrow$ последовательность является сход
 \section{Пределы функции}
 
 \[
-\lim_{n \to a} f(x) = A \text{ --- const} \lor \pm \infty \lor \lnot \exists
+\lim_{n \to a} f(x) = A = \Const \lor \pm \infty \lor \lnot \exists
 \]
 
 \subsection*{Примеры:}
@@ -765,13 +766,13 @@ $\Leftrightarrow$ последовательность является сход
 \ln \left(\lim_{x \to 0} (1 + x)^\frac{1}{x}\right) = \ln e = 1
 \]
 
-\subsection{Односторонние пределы}
+\section{Односторонние пределы}
 
 Стремление справа --- $\lim_{x \to a^{+}}$
 
 Стремление слева --- $\lim_{x \to a^{-}}$
 
-\subsubsection*{Примеры:}
+\subsection*{Примеры:}
 
 \begin{gather*}
 	\lim_{x \to +0} \frac{|\sin x|}{x^{>0}} = 1 \\
@@ -782,17 +783,28 @@ $\Leftrightarrow$ последовательность является сход
 	\lim_{x \to 2^{-}} \frac{x}{x-2} = \infty \\
 \end{gather*}
 
-\subsection{Сравнение бесконечно малых}
+\subsection{Точки разрыва}
+
+Точка разрыва $a$ функции $f(x)$ --- такая, что $\lim_{x \to a^+} f(x) = A \ne \lim_{x \to a^-} f(x) = B$
+
+\subsubsection{Порядки точек разрыва}
+
+\begin{enumerate}
+	\item $A, B = \Const$
+	\item $\not \exists A \lor \not \exists B \lor A = \pm \infty \lor B = \pm \infty$
+\end{enumerate}
+
+\section{Сравнение бесконечно малых}
 
 \begin{gather*}
 	f(x), g(x) \\
 	\lim_{x \to a} f(x) = 0 \\
 	\lim_{x \to a} g(x) = 0 \\
-	\If \lim_{x \to a} \frac{f(x)}{g(x)} = C \text{ --- const}
+	\If \lim_{x \to a} \frac{f(x)}{g(x)} = C = \Const
 	\Rightarrow f(x) = O(g(x)) \\
 	\If \lim_{x \to a} \frac{f(x)}{g(x)} = 0
 	\Rightarrow f(x) = o(g(x)) \\
-	\lim_{x \to a} \frac{f(x)}{(x - a)^n} = C \text{ --- const} \ne 0
+	\lim_{x \to a} \frac{f(x)}{(x - a)^n} = C = \Const \ne 0
 	\Rightarrow f(x) \sim C \cdot x^n
 \end{gather*}
 
@@ -821,7 +833,7 @@ $\Leftrightarrow$ последовательность является сход
 	\Rightarrow f(x) \sim \sqrt[4]{x}
 \end{gather*}
 
-\subsection{База}
+\section{База}
 
 \textbf{База} --- такой набор множеств $\mathbb{B}$, обладающий следующими \\
 свойствами:
@@ -924,6 +936,12 @@ $\V(A)$ --- \textbf{окрестность точки} $A$
 \right) \Leftrightarrow \left(
 	\forall \epsilon > 0, \exists B \in \mathbb{B}, \omega(f, B) < \epsilon
 \right)
+\]
+
+\section{Производная}
+
+\[
+f'(x) \triangleq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
 \]
 
 \end{document}

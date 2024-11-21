@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[14pt]{extsizes}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{indentfirst}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\Rg}{Rg}
+\DeclareMathOperator*{\Tr}{tr}
+
+\begin{document}
+\title{Аналитическая геометрия}
+\author{Илья Ковалев}
+\date{18 ноября 2024}
+\maketitle
+
+\section{Прямые}
+
+\subsection{Общее уравнение прямой}
+
+Прямая $l$ на плоскости $Oxy$
+
+\begin{gather*}
+	\begin{cases}
+		M_0(x, y) \in l \\
+		\vec{N} = \{ A, B \} \perp l
+	\end{cases} \Rightarrow
+	\forall M(x, y) \in l : \vec{M_0 M} \perp \vec{N} \Leftrightarrow \vec{N} \cdot \vec{M_0 M} = 0
+\end{gather*}
+
+\subsection{Параметрическое и каноническое уравнения \\
+$l \subset Oxy$}
+
+\begin{gather*}
+	\begin{cases}
+		M_0(x_0, y_0) \in l \\
+		M(x, y) \\
+		\vec{q} = \{ m, n \} \parallel l
+	\end{cases} \Rightarrow \\
+	\Rightarrow \forall M(x, y) \in l : \vec{M_0 M} \parallel \vec{q} \Leftrightarrow \\
+	\Leftrightarrow \exists t \in \mathbb{R} : \vec{M_0 M} = t \vec{q} \Leftrightarrow \\
+	\Leftrightarrow \begin{cases}
+		x - x_0 = mt \\
+		y - y_0 = nt
+	\end{cases} \Leftrightarrow t = \frac{x - x_0}{m} = \frac{y - y0}{n} \Rightarrow \\
+	\Rightarrow n(x - x_0) - m(y - y_0) = 0
+\end{gather*}
+
+\subsection{Прямая через 2 точки}
+
+\begin{gather*}
+	\begin{cases}
+		M_1(x_1, y_1) \in l \\
+		M_2(x_2, y_2) \in l
+	\end{cases} \Rightarrow \frac{x - x_1}{x_2 - x_1} = \frac{y - y_1}{y_2 - y_1}
+\end{gather*}
+
+\subsection{Расстояние от точки до прямой}
+
+\begin{gather*}
+	\begin{cases}
+		D(x_d, y_d) \\
+		l: Ax + By + C = 0
+	\end{cases} \Rrightarrow \rho = \frac{|Ax_d + By_d + C|}{\sqrt{A^2 + B^2}}
+\end{gather*}
+
+\end{document}
