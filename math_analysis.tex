@@ -790,7 +790,7 @@ $\Leftrightarrow$ последовательность является сход
 \subsubsection{Порядки точек разрыва}
 
 \begin{enumerate}
-	\item $A, B = \Const$
+	\item $A = B = \Const$
 	\item $\not \exists A \lor \not \exists B \lor A = \pm \infty \lor B = \pm \infty$
 \end{enumerate}
 
@@ -943,5 +943,33 @@ $\V(A)$ --- \textbf{окрестность точки} $A$
 \[
 f'(x) \triangleq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
 \]
+
+\subsection{Производная сложной функции}
+
+\[
+[f(g(x))]' = f'(g(x)) \cdot g'(x)
+\]
+
+\subsection{Логарифмическая производная}
+
+\begin{gather*}
+	(x^x)' = e^{x \ln x} \cdot (\ln x + x \cdot \frac{1}{x}) = (\ln x + 1) x^x \\
+	y' = y \cdot (ln y)'
+\end{gather*}
+
+\subsection{Неявно заданная функция}
+
+\[
+	\tg y = xy \Rightarrow (\tg y)' = (xy)' \Rightarrow \frac{y'}{cos^2 y} = xy' + y
+\]
+
+\subsection{Параметрическая функция}
+
+\begin{gather*}
+	\begin{cases}
+		x = x(t) \\
+		y = y(t)
+	\end{cases} \Rightarrow y_x' = \frac{y_t'}{x_t'}
+\end{gather*}
 
 \end{document}

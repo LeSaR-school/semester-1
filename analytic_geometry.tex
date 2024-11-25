@@ -43,7 +43,7 @@ $l \subset Oxy$}
 	\Leftrightarrow \begin{cases}
 		x - x_0 = mt \\
 		y - y_0 = nt
-	\end{cases} \Leftrightarrow t = \frac{x - x_0}{m} = \frac{y - y0}{n} \Rightarrow \\
+	\end{cases} \Leftrightarrow t = \frac{x - x_0}{m} = \frac{y - y_0}{n} \Rightarrow \\
 	\Rightarrow n(x - x_0) - m(y - y_0) = 0
 \end{gather*}
 
@@ -62,7 +62,90 @@ $l \subset Oxy$}
 	\begin{cases}
 		D(x_d, y_d) \\
 		l: Ax + By + C = 0
-	\end{cases} \Rrightarrow \rho = \frac{|Ax_d + By_d + C|}{\sqrt{A^2 + B^2}}
+	\end{cases} \Rightarrow \rho = \frac{|Ax_d + By_d + C|}{\sqrt{A^2 + B^2}}
+\end{gather*}
+
+\section{Плоскость в пространстве}
+
+\subsection{Общее уравнение плоскости}
+
+\begin{gather*}
+	\begin{cases}
+		M_0(x_0, y_0, z_0) \in P \\
+		\vec{N} = \{ A, B, C \} \perp P
+	\end{cases} \Rightarrow \forall M(x, y, z) \in P : \vec{M_0 M} \perp \vec{N} \Leftrightarrow \\
+	\Leftrightarrow A(x - x_0) + B(y - y_0) + C(z - z_0) = 0
+\end{gather*}
+
+\subsection{Компланарное уравнение}
+
+\begin{gather*}
+	\begin{cases}
+		M(x_0, y_0, z_0) \in P \\
+		\vec{p} \parallel P \\
+		\vec{q} \parallel P \\
+		\vec{p} \not \parallel \vec{q}
+	\end{cases} \Rightarrow \forall M(x, y, z) \in P : \vec{M_0 M}, \vec{p}, \vec{q} \text{ --- компланарны} \Leftrightarrow \\
+	\Leftrightarrow \begin{vmatrix}
+		x - x_0 & y - y_0 & z - z_0 \\
+		p_x & p_y & p_z \\
+		q_x & q_y & q_z \\
+	\end{vmatrix} = 0 \Rightarrow\\
+	\Rightarrow (x - x_0) A_{11} + (y - y_0) A_{12} + (z - z_0) A_{13} = 0
+\end{gather*}
+
+\subsection{Через 3 точки}
+
+\begin{gather*}
+	\begin{cases}
+		M_1(x_1, y_1, z_1) \in P \\
+		M_2(x_2, y_2, z_2) \in P \\
+		M_3(x_3, y_3, z_3) \in P \\
+		M_1 \not \in \vec{M_1 M_2} \\
+		M_2 \not \in \vec{M_2 M_3} \\
+		M_3 \not \in \vec{M_3 M_1} \\
+	\end{cases} \Leftrightarrow P : \begin{vmatrix}
+		x - x_1 & y - y_1 & z - z_1 \\
+		x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\
+		x_3 - x_1 & y_3 - y_1 & z_3 - z_1 \\
+	\end{vmatrix} = 0
+\end{gather*}
+
+\subsection{Расстояние от точки до плоскости}
+
+\begin{gather*}
+	\begin{cases}
+		P(x_0, y_0, z_0) \\
+		Ax + By + Cz + D = 0
+	\end{cases} \Rightarrow
+	\rho = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}
+\end{gather*}
+
+\subsection{Взаимные расположения 2 плоскостей}
+
+\[
+\begin{cases}
+	P1 : A_1x + B_1y + C_1z + D_1 = 0 \\
+	P2 : A_2x + B_2y + C_2z + D_2 = 0 \\
+\end{cases}
+\]
+
+\subsubsection{Параллельные}
+
+\begin{gather*}
+	P_1 \parallel P_2 \Leftrightarrow \frac{A_1}{A_2} =
+	\frac{B_1}{B_2} = \frac{C_1}{C_2} \\
+	\rho(P_1 \parallel P_2) = \rho(M_1 \in P_1, P_2) =
+	\frac{|D_2 C_1 - D_1 C_2|}{|C_1| \sqrt{A_2^2 + B_2^2 + C_2^2}}
+\end{gather*}
+
+\subsubsection{Пересекающиеся}
+
+\begin{gather*}
+	P_1 \not \parallel P_2 \Leftrightarrow
+	\frac{A_1}{A_2} \ne \frac{B_1}{B_2} \lor \frac{B_1}{B_2} \ne \frac{C_1}{C_2} \\
+	\alpha = \angle(P_1, P_2) \in (0; \frac{\pi}{2}] :
+	\cos \alpha = |\cos \phi| = \frac{|\vec{N_1} \cdot \vec{N_2}|}{|\vec{N_1}| |\vec{N_2}|}
 \end{gather*}
 
 \end{document}
