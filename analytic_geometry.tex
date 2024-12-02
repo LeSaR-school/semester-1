@@ -15,7 +15,7 @@
 \date{18 ноября 2024}
 \maketitle
 
-\section{Прямые}
+\section{Прямая в плоскости}
 
 \subsection{Общее уравнение прямой}
 
@@ -121,7 +121,7 @@ $l \subset Oxy$}
 	\rho = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}
 \end{gather*}
 
-\subsection{Взаимные расположения 2 плоскостей}
+\subsection{Взаимное расположение 2 плоскостей}
 
 \[
 \begin{cases}
@@ -146,6 +146,119 @@ $l \subset Oxy$}
 	\frac{A_1}{A_2} \ne \frac{B_1}{B_2} \lor \frac{B_1}{B_2} \ne \frac{C_1}{C_2} \\
 	\alpha = \angle(P_1, P_2) \in (0; \frac{\pi}{2}] :
 	\cos \alpha = |\cos \phi| = \frac{|\vec{N_1} \cdot \vec{N_2}|}{|\vec{N_1}| |\vec{N_2}|}
+\end{gather*}
+
+\section{Прямая в пространстве}
+
+\subsection{Общее уравнение}
+
+Пересечение плоскостей
+
+\begin{gather*}
+	L : \begin{cases}
+		A_1x + B_1y + C_1z + D_1 = 0 \\
+		A_2x + B_2y + C_2z + D_2 = 0 \\
+		\frac{A_1}{A_2} \ne \frac{B_1}{B_2} \lor \frac{B_1}{B_2} \ne \frac{C_1}{C_2}
+	\end{cases} \\
+	\vec{N_1} = \{ A_1, B_1, C_1 \} \\
+	\vec{N_2} = \{ A_2, B_2, C_2 \} \\
+\end{gather*}
+
+\subsection{Параметрическое и каноническое}
+
+\begin{gather*}
+	\begin{cases}
+		M_0(x_0, y_0, z_0) \in L \\
+		\vec{q} = \{ m, n, p \} \parallel L
+	\end{cases} \Rightarrow \\
+	\Rightarrow \begin{cases}
+		x - x_0 = mt \\
+		y - y_0 = nt \\
+		z - z_0 = pt \\
+		m^2 + n^2 + p^2 \ne 0
+	\end{cases} \Leftrightarrow \\
+	\Leftrightarrow t = \frac{x - x_0}{m} = \frac{y - y_0}{n} = \frac{z - z_0}{p} \\
+	\vec{q} = \vec{N_1} \times \vec{N_2} \\
+	M_0 : \begin{cases}
+		A_1x_0 \dots = 0 \\
+		A_2x_0 \dots = 0 \\
+		x_0 = 0 \lor y_0 = 0 \lor z_0 = 0
+	\end{cases} \rightarrow M_0(x_0, y_0, z_0)
+\end{gather*}
+
+\subsection{Расстояние от точки до прямой}
+
+\begin{gather*}
+	\begin{cases}
+		M_1(x_1, y_1, z_1) \\
+		L: t = \frac{x - x_0}{m} = \frac{y - y_0}{n} = \frac{z - z_0}{p} \\
+	\end{cases} \Rightarrow
+	\rho(M_1, L) = \frac{|\vec{M_0 M_1} \times \vec{q}|}{|\vec{q}|}
+\end{gather*}
+
+\subsection{Взаимное расположение 2 прямых}
+
+\[
+	\begin{cases}
+		L_1: \frac{x - x_1}{m_1} = \frac{y - y_1}{n_1} = \frac{z - z_1}{p_1} \\
+		L_2: \frac{x - x_2}{m_2} = \frac{y - y_2}{n_2} = \frac{z - z_2}{p_2}
+	\end{cases}
+\]
+
+\subsubsection{Параллельные}
+
+\begin{gather*}
+	\frac{m_1}{m_2} = \frac{n_1}{n_2} = \frac{p_1}{p_2} \Rightarrow L_1 \parallel L_2 \\
+	\rho(L_1, L_2) = \rho(M_1 \in L_1, L_2) = \frac{|\vec{M_2 M_1} \times \vec{q_2}|}{|\vec{q_2}|}
+\end{gather*}
+
+\subsubsection{Непараллельные}
+
+\begin{gather*}
+	\begin{cases}
+		\frac{m_1}{m_2} \ne \frac{n_1}{n_2} \lor \frac{n_1}{n_2} \ne \frac{p_1}{p_2} \\
+		\rho(L_1, L_2) = \frac{|(\vec{M_1 M_2}, \vec{q_1}, \vec{q_2})|}{|\vec{q_1} \times \vec{q_2}|}
+	\end{cases} \\
+	\alpha = \angle(L_1, L_2) \in [0; \frac{\pi}{2}] \\
+	\cos \alpha = |\cos \phi| = \frac{|\vec{q_1} \cdot \vec{q_2}|}{|\vec{q_1}| \cdot |\vec{q_2}|}
+\end{gather*}
+
+$\rho(L_1, L_2) = 0$ --- пересекающиеся
+
+$\rho(L_1, L_2) \ne 0$ --- скрещивающиеся
+
+\subsection{Взаимное расположение прямой и плоскости}
+
+\[
+	\begin{cases}
+		L: \frac{x - x_1}{m_1} = \frac{y - y_1}{n_1} = \frac{z - z_1}{p_1} \\
+		P: Ax + By + Cz + D = 0 \rightarrow \vec{N} = \{ A, B, C \} \perp P
+	\end{cases}
+\]
+
+\subsubsection{Параллельные}
+
+\[
+	L \parallel P \Leftrightarrow
+	\vec{q} \perp \vec{N} \Leftrightarrow
+	\vec{q} \cdot \vec{N} \Leftrightarrow
+	Am + Bn + Cp = 0
+\]
+
+\subsubsection{Пересекающиеся}
+
+\begin{gather*}
+	L \not \parallel P \Leftrightarrow Am + Bn + Cp \ne 0 \\
+	\beta = \angle(L, P) \\
+	\sin \beta = |\cos \phi| = \frac{|\vec{N} \cdot \vec{q}|}{|\vec{N}| \cdot |\vec{q}|} \\
+	K = L \cap P : \begin{cases}
+		\frac{x - x_0}{m} = \frac{y - y_0}{n} = \frac{z - z_0}{p} = t \\
+		Ax + By + Cz + D = 0
+	\end{cases} \Rightarrow \begin{cases}
+		x = x_0 + mt \\
+		y = y_0 + nt \\
+		z = z_0 + pt \\
+	\end{cases}
 \end{gather*}
 
 \end{document}
