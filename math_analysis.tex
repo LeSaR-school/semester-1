@@ -972,4 +972,72 @@ f'(x) \triangleq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
 	\end{cases} \Rightarrow y_x' = \frac{y_t'}{x_t'}
 \end{gather*}
 
+\section{Свойства}
+
+\subsection{}
+
+\begin{gather*}
+	f(x) \in C([a; b]), ab \le 0, \exists x_0 \in [a; b] : f(x_0) = 0 \\
+	\Let a_1 = a, b_1 = b \\
+	\Let x_k = \frac{a_k + b_k}{2} \\
+	a_{k + 1} = \begin{cases}
+		a_k \If a_k x_k > 0 \\
+		x_k \If a_k x_k \le 0
+	\end{cases}
+	b_{k + 1} = \begin{cases}
+		b_k \If b_k x_k > 0 \\
+		x_k \If b_k x_k \le 0
+	\end{cases} \\
+	\left\{ [a_k; b_k] \right\} \text{ --- множество вложенных отрезков} \\
+	\forall k \in \mathbb{N} \exists c \in [a_k; b_k] \\
+	x_0 = \begin{cases}
+		x_k \If f(x_k) = 0 \\
+		x_{k + 1} \If f(x_k) \ne 0
+	\end{cases}
+\end{gather*}
+
+\subsection{}
+
+\begin{gather*}
+	f(x) \in C([a; b]) \\
+	\forall \epsilon > 0 \forall x \in [a; b], \exists \delta(x, \epsilon) > 0 :
+	\forall \tilde{x}, |x - \tilde{x}| < \delta :
+	|f(\tilde{x}) - f(x)| < \delta \\
+	\left\{ U_{\delta(x)}(x), x \in [a; b] \right\} \text{ --- покрытие отрезка} \\
+	\left\{ U_\frac{\delta}{2}(x), x \in [a; b] \right\} \text{ --- тоже покрытие отрезка} \\
+	\text{Выберем конечное подпокрытие} \\
+	\left\{ U_\frac{\delta_1}{2}(x_1), U_\frac{\delta_2}{2}(x_2), \dots U_\frac{\delta_n}{2}(x_n),  \right\} \\
+	\tilde{\delta} = \min {\frac{\delta_1}{2}, \frac{\delta_2}{2}, \dots \frac{\delta_n}{2}} \\
+	x', x'' : |x' - x''| < \delta \\
+	\exists k : x' \in U_\frac{\delta_k}{2}(x_k) : |x' - x_k| < \frac{\delta_k}{2} \\
+	|x'' - x_k| \le |x'' - x'| + |x' - x_k| = \tilde{\delta} + \frac{\delta_k}{2} \le \delta_k \\
+	x', x'' \in U_\frac{\delta_k}{2}(x_k)
+\end{gather*}
+
+\subsection{Непрерывная на $[a; b]$ инъективная $f(x)$ является монотонной}
+
+\begin{gather*}
+	\Let x_1 < x_2 < x_3, f(x_2) < f(x_1) < f(x_3) \\
+	\exists c \in [x_2; x_3] : f(c) = f(x_1) \text{ --- противоречие инъекции}
+\end{gather*}
+
+\subsection{Монотонная $f(x)$ может иметь разрывы только I порядка}
+
+\begin{gather*}
+	f(x) : E \to \mathbb{R}, f(x) \text{ --- монотонная на E} \\
+	\Let a \text{ --- точка разрыва } f(x), a \in E \\
+	a \text{ --- предельная точка } E \\
+	E^- = \left\{ x | x \in E, x < a \right\} \\
+	E^+ = \left\{ x | x \in E, x > a \right\} \\
+	a \text{ --- предельная точка хотя бы одного из } E^-, E^+ \\
+	\text{Пусть для определенности $f(x)$ --- неубывающая} \\
+	\text{Пусть это } E^- \\
+	f(x) \text{ --- ограничена сверху на } E^- (f(a) \text{ или } \forall f(x), x \in E^-) \\
+	\exists \lim{x \to a^-, x \in E} f(x) = A^-
+	\text{Пусть это } E^+ \\
+	f(x) \text{ --- ограничена снизу на } E^+ (f(a) \text{ или } \forall f(x), x \in E^+) \\
+	\exists \lim{x \to a^+, x \in E} f(x) = A^+ \\
+	A^- \le f(x) < A^+ \lor A^- < f(x) \le A^+
+\end{gather*}
+
 \end{document}
