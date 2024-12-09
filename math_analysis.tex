@@ -1040,4 +1040,72 @@ f'(x) \triangleq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
 	A^- \le f(x) < A^+ \lor A^- < f(x) \le A^+
 \end{gather*}
 
+\section{Дифференцирование}
+
+\subsection{Производная и дифференциал}
+
+$f(x) \in D(x_0)$ --- функция дифференциерума в точке
+
+\[
+	f(x) = f(x_0) + f'(x_0)(x - x_0) + o(x - x_0)
+\]
+
+\[
+	f(x) \in D(x_0) \Leftrightarrow \exists f'(x_0)
+\]
+
+\subsection{Дифферециал}
+
+Дифференциалом функции $f(x)$ в точке $x_0$ называется линейная \\
+функция вида $d_{x_0} f = f(x_0) \Delta x$, где $\Delta x = x - x_0$ --- приращение аргумента
+
+$\Delta f = f(x) - f(x_0)$ --- приращение функции
+
+Отсюда
+
+\[
+	\Delta f = d_{x_0} \Delta x + o(\Delta x), \Delta x \to 0
+\]
+
+\subsection{Теорема}
+
+Утверждение:
+\[
+	f(x) \in D(x_0) \Rightarrow f(x) \in C(x_0)
+\]
+
+Доказательство:
+\begin{align*}
+	f(x) \in D(x_0) \Rightarrow f(x) &= f(x_0) + f'(x_0)(x - x_0) + o(x - x_0) \\
+	\lim_{x \to x_0} f(x) &= f(x_0) + 0 + 0 \Rightarrow f(x_0)
+\end{align*}
+
+\subsection{Дифференциерумость на множестве}
+
+\begin{gather*}
+	f(x) \in D(A) \Leftrightarrow \forall a \in A : f(x) \in D(a) \\
+	f'(x) = \frac{df}{dx}
+\end{gather*}
+
+\subsection{Свойства производной}
+
+\[
+	(f(x) + g(x))' = f'(x) + g'(x)
+\]
+
+\[
+	(f(x) \cdot g(x))' = f'(x)g(x) + f(x)g'(x)
+\]
+Доказательство:
+
+\begin{gather*}
+	(f(x) \cdot g(x))' = \\
+	\lim_{x \to 0} \frac{f(x + h)g(x + h) - f(x)g(x)}{h} = \\
+	\lim_{x \to 0} \frac{f(x + h)g(x + h) - f(x)g(x + h) + f(x)g(x + h) - f(x)g(x)}{h} = \\
+	\lim_{x \to 0} \frac{g(x + h)(f(x + h) - f(x)) + f(x)(g(x + h) - g(x))}{h} = \\
+	\lim_{x \to 0} \frac{g(x + h)(f(x + h) - f(x))}{h} + \lim_{x \to 0} \frac{f(x)(g(x + h) - g(x))}{h} = \\
+	f(x)g'(x) + g(x)f'(x)
+\end{gather*}
+
+
 \end{document}
