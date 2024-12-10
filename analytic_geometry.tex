@@ -241,7 +241,7 @@ $\rho(L_1, L_2) \ne 0$ --- скрещивающиеся
 \[
 	L \parallel P \Leftrightarrow
 	\vec{q} \perp \vec{N} \Leftrightarrow
-	\vec{q} \cdot \vec{N} \Leftrightarrow
+	\vec{q} \cdot \vec{N} =
 	Am + Bn + Cp = 0
 \]
 
@@ -260,5 +260,85 @@ $\rho(L_1, L_2) \ne 0$ --- скрещивающиеся
 		z = z_0 + pt \\
 	\end{cases}
 \end{gather*}
+
+\section{Кривые II порядка на плоскости $Oxy$}
+
+\subsection{Общее уравнение}
+
+\[
+	K_2 : Ax^2 + 2Bxy + Cy^2 + Dx + Ey + F = 0
+\]
+
+\subsection{Канонический вид}
+
+\subsubsection{$B \ne 0$}
+
+Поворот системы координат на $\alpha : \ctg \alpha = \frac{A - C}{2B}$
+
+\subsubsection{$B = 0$}
+
+Сдвиг начала системы координат в точку $M_0(x_0, y_0)$
+
+\subsubsection{Способ приведения}
+
+Выделение полных квадратов $(x - x_0)^2, (y - y_0)^2$
+
+\[
+	\begin{cases}
+		u = x - x_0 \\
+		v = y - y_0 \\
+	\end{cases}
+\]
+
+\begin{gather*}
+	(Ax^2 + Dx) + (Cy^2 + Ey) = -F \\
+	A(x^2 + \frac{D}{A}x) + C(y^2 + \frac{E}{C}y) = -F \\
+	A((x - x_0)^2 - x_0^2) + C((y - y_0)^2 - y_0^2) = -F \\
+	A(x - x_0)^2 + C(y - y_0)^2 = -F + Ax_0^2 + Cy_0^2 = H \\
+	\frac{u^2}{\frac{H}{A}} + \frac{v^2}{\frac{H}{C}} = 1
+\end{gather*}
+
+Нет $x^2$ --- парабола
+\begin{gather*}
+	A = 0, C \ne 0 \\
+	Cy^2 + Dx + Ey + F = 0 \\
+	C((y - y_0)^2 - y_0^2) = -Dx - F \\
+	C(y - y_0)^2 = -Dx - F + Cy_0^2 \\
+	C(y - y_0)^2 = -D(x - x_0) \\
+	Cv^2 = -Du \\
+	v^2 = -\frac{D}{C}u
+\end{gather*}
+
+\subsection{Канонические уравнения и сами кривые}
+
+\subsubsection{Эллипс}
+
+\[
+	\frac{u^2}{a^2} + \frac{v^2}{b^2} = 1
+\]
+
+Если $a^2 > b^2$, эллипс вытянут вертикально, фокусы на $Oy$.
+
+Если $a^2 < b^2$, эллипс вытянут горизонтально, фокусы на $Ox$.
+
+\subsubsection{Гипербола}
+
+\[
+	\frac{u^2}{a^2} - \frac{v^2}{b^2} = \pm 1
+\]
+
+Если $+1$, ветви гиперболы вправо и влево.
+
+Если $-1$, ветви гиперболы вверх и вниз.
+
+\subsubsection{Парабола}
+
+\[
+	v^2 = 2pu
+\]
+
+Если $p > 0$, ветви параболы вправо.
+
+Если $p < 0$, ветви параболы влево.
 
 \end{document}
